@@ -1,0 +1,19 @@
+.nav {
+
+    &__list {
+        display: flex;
+        gap: 25px;
+        justify-content: space-between;
+        
+    }
+
+    &__link {
+        color: var(--black);
+        padding-top: 28px;
+        padding-bottom: 28px;
+
+        // &:hover,
+        // &:focus
+
+    }
+}

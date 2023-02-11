@@ -1,0 +1,66 @@
+.header {
+
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white);
+
+    background: var(--lineal-hero), url(/images/hero/mobile/hero@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 25px 2px 0 2px; 
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .hero {
+        padding-top: 41px;
+        padding-bottom: 45px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-mini-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background: var(--lineal-hero), url(/images/hero/mobile/hero@2x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-mini-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 228dpi),
+    screen and (min-resolution: 3dppx) {
+        background: var(--lineal-hero), url(/images/hero/mobile/hero@3x.jpg);
+    }
+
+
+
+
+
+    // & .container {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+
+    // &__phone-link {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     color: var(--black);
+    //     padding-top: 28px;
+    //     padding-bottom: 28px;
+    // }
+
+
+
+}

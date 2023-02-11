@@ -1,0 +1,11 @@
+.lang {
+    display: flex;
+    gap: 16px;
+
+    color: var(--black);
+    text-transform: uppercase;
+
+    &__link {
+        color: inherit;
+    }
+}

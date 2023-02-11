@@ -1,0 +1,15 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 700;
+    &__title{
+        font-size: 50px;
+        line-height: calc(74/50);
+        font-variant: small-caps;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+    }
+}

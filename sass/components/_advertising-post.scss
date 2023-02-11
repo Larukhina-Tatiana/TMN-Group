@@ -1,0 +1,33 @@
+.advertising-post {
+    padding: 31px 32px 34px 33px;
+
+    text-align: left;
+
+    background: rgba(153, 171, 221, 0.26);
+    border-radius: 5px;
+
+    filter: drop-shadow(-3px -3px 12px rgba(0, 0, 0, 0.06)) drop-shadow(4px 4px 29px rgba(0, 0, 0, 0.17));
+    backdrop-filter: blur(25px);
+
+    &__subtitle {
+        // font-weight: 700;
+        font-size: 18px;
+        line-height: calc(17/18);
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin-top: 10px;
+        margin-bottom: 14px;
+    }
+
+    &__img{
+        width: 230px;
+        height: 118px;
+        padding: 25px 10px;
+        margin-bottom: 18px;
+
+        background: var(--white);
+        border-radius: 5px;
+    }
+}
