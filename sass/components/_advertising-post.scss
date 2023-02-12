@@ -9,13 +9,6 @@
     filter: drop-shadow(-3px -3px 12px rgba(0, 0, 0, 0.06)) drop-shadow(4px 4px 29px rgba(0, 0, 0, 0.17));
     backdrop-filter: blur(25px);
 
-    &__subtitle {
-        // font-weight: 700;
-        font-size: 18px;
-        line-height: calc(17/18);
-        text-transform: uppercase;
-    }
-
     &__text {
         margin-top: 10px;
         margin-bottom: 14px;
@@ -59,7 +52,6 @@
         &:hover,
         &:focus {
             color: var(--main-color);
-
             @include transition($transition-property: color);
         }
     }

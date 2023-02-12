@@ -1,0 +1,26 @@
+.about-us {
+    // padding-top: 40px;
+    padding-bottom: 35px;
+
+    & .h2 {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin-top: 32px;
+    }
+
+    &__item {
+        width: 295px;
+        height: 140px;
+
+        background: var(--white);
+
+        box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+    }
+
+    &__svg {
+        fill: var(--main-color);
+    }
+}

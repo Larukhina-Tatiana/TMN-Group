@@ -1,0 +1,94 @@
+.products {
+    padding-top: 50px;
+    padding-bottom: 40px;
+
+    & .h2 {
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        width: 295px;
+        height: 169px;
+        border-radius: 5px;
+
+        &:nth-child(1) {
+            background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:nth-child(2) {
+            background: var(--lineal-products), url(/images/category/mobile/latex-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:nth-child(3) {
+            background: var(--lineal-products), url(/images/category/mobile/medical-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            & .products__link {
+                padding: 100px 32px 21px 124px;
+            }
+        }
+        &:nth-child(4) {
+            background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            & .products__link {
+                padding: 118px 24px 18px 117px;
+            }
+        }
+        &:nth-child(5) {
+            background: var(--lineal-products), url(/images/category/mobile/economic-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:nth-child(6) {
+            background: var(--lineal-products), url(/images/category/mobile/construction-gloves@1x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            & .products__link {
+                padding: 118px 22px 18px 138px;
+            }
+        }
+
+        @media screen and (max-width: 1440px) {
+            &:not(last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    
+
+    &__link {
+        padding: 118px 24px 18px 152px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 17px;
+        font-variant: small-caps;
+        color: var(--white);
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+
+        &:hover,
+        &:focus {
+            color: var(--main-color);
+            @include transition($transition-property: color);
+        }
+
+        &:hover .header__svg,
+        &:focus .header__svg {
+            fill: var(--main-color);
+            @include transition($transition-property: fill);
+        }
+    }
+}
