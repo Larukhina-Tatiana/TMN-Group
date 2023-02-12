@@ -21,7 +21,7 @@
         margin-bottom: 14px;
     }
 
-    &__img{
+    &__img {
         width: 230px;
         height: 118px;
         padding: 25px 10px;
@@ -30,4 +30,40 @@
         background: var(--white);
         border-radius: 5px;
     }
+
+    &__name {
+        width: 239px;
+        height: 54px;
+    }
+
+    &__name-title {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.08);
+
+
+        &-accent {
+            font-size: 14px;
+            line-height: calc(16/14);
+            text-transform: capitalize;
+            color: var(--accent);
+        }
+    }
+
+    &__link {
+        color: var(--white);
+        text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.08);
+        text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            color: var(--main-color);
+
+            @include transition($transition-property: color);
+        }
+    }
+
+
+
 }

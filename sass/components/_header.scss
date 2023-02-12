@@ -23,6 +23,11 @@
         padding-bottom: 45px;
     }
 
+    &__svg {
+        background: var(--lineal-hero);
+        fill: var(--white);
+    }
+
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-mini-device-pixel-ratio: 2/1),
@@ -41,6 +46,8 @@
     screen and (min-resolution: 3dppx) {
         background: var(--lineal-hero), url(/images/hero/mobile/hero@3x.jpg);
     }
+
+
 
 
 
