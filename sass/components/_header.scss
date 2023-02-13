@@ -45,6 +45,9 @@
     screen and (min-resolution: 228dpi),
     screen and (min-resolution: 3dppx) {
         background: var(--lineal-hero), url(/images/hero/mobile/hero@3x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
 
