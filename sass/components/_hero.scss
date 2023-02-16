@@ -2,8 +2,9 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-weight: 700;
-    &__title{
+    // font-weight: 700;
+
+    &__title {
         font-size: 50px;
         line-height: calc(74/50);
         font-variant: small-caps;
@@ -11,5 +12,18 @@
 
     &__text {
         margin-bottom: 28px;
+        font-weight: 700;
+    }
+
+    & &__button {
+        width: 256px;
+        height: 35px;
+        padding: 7px 46px 6px;
+        margin-bottom: 33px;
+
+        font-size: 15px;
+        line-height: calc(22/15);
+
+        text-transform: none;
     }
 }

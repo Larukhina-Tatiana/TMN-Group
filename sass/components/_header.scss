@@ -16,7 +16,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+
     }
+
+    // &>ul>li {
+    //     position: relative;
+    // white-space: nowrap;
+    // float: left;
+    // }
+
+    // & .drop-down::after {
+    //     content: "🠗";
+    //     font-family: IcoFont;
+    //     padding-left: 5px;
+    //     color: var(--white);
+    // }
 
     & .hero {
         padding-top: 41px;
@@ -50,6 +65,17 @@
         background-repeat: no-repeat;
     }
 
+    // .phone-inner {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 15px;
+    // }
+    .phone_link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--white);
+    }
 
 
 
@@ -71,6 +97,21 @@
     //     padding-bottom: 28px;
     // }
 
+
+// стрелка вниз в меню виситна спане классом
+// на сайте электроенергии
+// <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
+//     .ttt {
+//     display: inline-block;
+//     width: 0;
+//     height: 0;
+//     margin-left: 2px;
+//     vertical-align: middle;
+//     border-top: 4px dashed;
+//     border-top: 4px solid \9;
+//     border-right: 4px solid transparent;
+//     border-left: 4px solid transparent;
+// }
 
 
 }

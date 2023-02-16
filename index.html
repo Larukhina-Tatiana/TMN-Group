@@ -18,8 +18,16 @@
                         <img src="/images/logo/295/Logo-mobile.png" alt="Логотип ТМН-Груп">
                     </a>
                 </li>
-                <li>
-                    <a href="tel:+380675703489">(067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89</a>
+                <li class="drop-down">
+                    <div class="phone-inner">
+                        <a class="phone_link" href="tel:+380675703489">(067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
+                            <!-- <span class="ttt"></span> -->
+                            <svg width="16" height="16">
+                                <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-rounded-down"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
                 </li>
                 <li>
                     <a href="">
@@ -62,34 +70,34 @@
                     WRP, Heliomed,
                     LinkMed.,. Ваш надійний партнер в області профілактики інфекцій, пов’язаних з наданням медичної
                     допомоги.</p>
-                <button class="button" type="button">Переглянути продукцію</button>
+                <button class="button hero__button" type="button">Переглянути продукцію</button>
 
-                <article class="advertising-post">
+                <article class="preview-post">
                     <h2 class="h2">covid-19</h2>
-                    <p class="advertising-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A morbi
+                    <p class="preview-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A morbi
                         dit amet, consectetur adipiscing
                         elinterdum in viverra eget viverra dignissim neque.dolor sit amet, consectetur adipiscing el</p>
-                    <div class="advertising-post__img">
+                    <div class="preview-post__img">
                         <picture>
                             <source srcset="
-                            ./images/hero/mobile/advertising-post/profeel@1x.webp 213w,
-                            ./images/hero/mobile/advertising-post/profeel@2x.webp 424w,
-                            ./images/hero/mobile/advertising-post/profeel@3x.webp 635w
+                            ./images/hero/mobile/preview-post/profeel@1x.webp 213w,
+                            ./images/hero/mobile/preview-post/profeel@2x.webp 424w,
+                            ./images/hero/mobile/preview-post/profeel@3x.webp 635w
                             " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 213px" />
                             <img srcset="
-                                ./images/hero/mobile/advertising-post/profeel@1x.jpg 213w,
-                                ./images/hero/mobile/advertising-post/profeel@2x.jpg 424w,
-                                ./images/hero/mobile/advertising-post/profeel@3x.jpg 635w
-                            " src="./images/hero/mobile/advertising-post/profeel@1x.jpg"
+                                ./images/hero/mobile/preview-post/profeel@1x.jpg 213w,
+                                ./images/hero/mobile/preview-post/profeel@2x.jpg 424w,
+                                ./images/hero/mobile/preview-post/profeel@3x.jpg 635w
+                            " src="./images/hero/mobile/preview-post/profeel@1x.jpg"
                                 alt="Фото коробок оглядових руковичок Profeel" sizes="(min-width: 375px) 213px" />
                         </picture>
                     </div>
-                    <div class="advertising-post__name">
-                        <h3 class="advertising-post__name-title">Оглядові рукавички ECO&#174;
-                            <span class="advertising-post__name-title-accent">Examination gloves Eco&#174;
+                    <div class="preview-post__name">
+                        <h3 class="preview-post__name-title">Оглядові рукавички ECO&#174;
+                            <span class="preview-post__name-title-accent">Examination gloves Eco&#174;
                             </span>
                         </h3>
-                        <a class="advertising-post__link" href="">ECO&#174; подвійна система..
+                        <a class="preview-post__link" href="">ECO&#174; подвійна система..
                             <svg width="23" height="7" aria-label="Іконка стрілка вправо">
                                 <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-Arrow-right"></use>
                             </svg>
@@ -222,27 +230,200 @@
 
                     <label class="form__label" for="first-name"></label>
 
-                    <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Ім'я" required/>
+                    <input class="form__input" type="text" name="first-name" id="first-name" placeholder="Ім'я"
+                        required />
 
 
                     <label class="form__label" for="phone"></label>
 
-                    <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефону" required />
+                    <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер телефону"
+                        required />
 
 
                     <label class="form__label" for="email"></label>
 
-                    <input class="form__input" type="email" name="email" id="email" placeholder="E-mail"required />
+                    <input class="form__input" type="email" name="email" id="email" placeholder="E-mail" required />
 
                     <button class="button form__button" type="submit">
                         Відправити
                     </button>
                 </form>
             </div>
-
         </section>
+        <section class="advantage">
+            <div class="container">
+                <h2 class="h2">ПЕРЕВАГИ РУКАВИЧОК В МЕДИЧНОМУ та промисловому СЕКТОРІ</h2>
+                <ul class="advantage__list">
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-alergic">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Низький ризик алергій і дерматитів</p>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-high-fast">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Висока міцність, стійкість до порізів і розривів</p>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-elastic">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Гарна еластичність</p>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-sensative">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Забезпечують необхідну чутливість рук</p>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-safety">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Високий рівень безпеки</p>
+                        </div>
+                    </li>
+                    <li class="advantage__item">
+                        <div class="advantage__item-wrapper">
+                            <svg width="65" height="65">
+                                <use class="about-us__svg" href="./images/icons/mobile/icons.svg#icon-fixed-position">
+                                </use>
+                            </svg>
+                            <p class="advantage__text">Екстурірованная поверхню забезпечує надійну фіксацію інструменту
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <h2 class="h2 visually-hidden">Наш блог</h2>
+                <a class="blog__link" href="">читати усі статті
+                    <svg width="36" height="7" aria-label="Іконка стрілка вправо">
+                        <use class="blog__link-svg" href="./images/icons/mobile/icons.svg#icon-Arrow-right">
+                        </use>
+                    </svg>
+                </a>
+                <div class="blog__iner">
+                    <article class="blog__post-card">
+                        <picture>
+                            <source srcset="
+                            ./images/blog/mobile/blog1@1x.webp 230w,
+                            ./images/blog/mobile/blog1@2x.webp 460w,
+                            ./images/blog/mobile/blog1@3x.webp 690w
+                            " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 230px" />
+                            <img class="blog__img" srcset="
+                                ./images/blog/mobile/blog1@1x.jpg 230w,
+                                ./images/blog/mobile/blog1@2x.jpg 460w,
+                                ./images/blog/mobile/blog1@3x.jpg 690w
+                            " src="./images/blog/mobile/blog1@1x.jpg"
+                                alt="Фото застосування руковичок у харчовій промисловості"
+                                sizes="(min-width: 375px) 230px" />
+                        </picture>
+                        <h3 class="blog__post-title">Які рукавички найкраще використовувати в гінекології</h3>
+                        <p class="blog__post-excerpt">Медичні рукавички в гінекології – запорука здоров’я медпрацівника
+                            і пацієнта. Для великих організацій найкраще купувати рукавички медичні..</p>
+                        <a class="button" href="">Детальніше</a>
+                    </article>
+                    <article class="blog__post-card">
+                        <picture>
+                            <source srcset="
+                            ./images/blog/mobile/blog1@1x.webp 230w,
+                            ./images/blog/mobile/blog1@2x.webp 460w,
+                            ./images/blog/mobile/blog1@3x.webp 690w
+                            " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 230px" />
+                            <img class="blog__img" srcset="
+                                ./images/blog/mobile/blog1@1x.jpg 230w,
+                                ./images/blog/mobile/blog1@2x.jpg 460w,
+                                ./images/blog/mobile/blog1@3x.jpg 690w
+                            " src="./images/blog/mobile/blog1@1x.jpg"
+                                alt="Фото застосування руковичок у харчовій промисловості"
+                                sizes="(min-width: 375px) 230px" />
+                        </picture>
+                        <!-- <picture>
+                            <source srcset="
+                            ./images/blog/mobile/blog2@1x.webp 230w,
+                            ./images/blog/mobile/blog2@2x.webp 460w,
+                            ./images/blog/mobile/blog2@3x.webp 690w
+                            " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 230px" />
+                            <img class="blog__img" srcset="
+                                ./images/blog/mobile/blog2@1x.jpg 230w,
+                                ./images/blog/mobile/blog2@2x.jpg 460w,
+                                ./images/blog/mobile/blog2@3x.jpg 690w
+                            " src="./images/blog/mobile/blog2@1x.jpg"
+                                alt="Фото застосування руковичок у харчовій промисловості"
+                                sizes="(min-width: 375px) 230px" />
+                        </picture> -->
+                        <h3 class="blog__post-title">Класифікація медичних рукавичок</h3>
+                        <p class="blog__post-excerpt">Медичні рукавички — ефективний засіб для захисту від інфекцій і
+                            хімічних агресивних речовин як персоналу, так і пацієнтів. Існує кілька різновидів виробів..
+                        </p>
+                        <a class="button" href="">детальніше</a>
+                    </article>
+                </div>
 
+
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="">наша продукція</a></li>
+                <li class="footer__item"><a class="footer__link" href="">про компанію</a></li>
+                <li class="footer__item"><a class="footer__link" href="">блог</a></li>
+            </ul>
+            <address>
+                <ul class="footer__address">
+                    <ul class="footer__phone_list">
+                        <div class="footer__phone-inner">
+                            <p class="footer__phone-title">телефон:</p>
+                        </div>
+                        <div class="footer__phone-inner-num">
+                            <li>
+                                <a class="footer__link footer__link--address"
+                                    href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                            </li>
+                            <li>
+                                <a class="footer__link footer__link--address"
+                                    href="tel:+380675703489">(067)&nbsp;570-34-89</a>
+                            </li>
+                        </div>
+
+                    </ul>
+
+                    <li>
+                        <p class="footer__mail-title">E-mail:</p>
+                        <a class="footer__link footer__link--address" href="mailto:office@tmngroup.com.ua">
+                            office@tmngroup.com.ua
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__copyright">Copyright 	
+                    &#169; 2023. TNM - Group</p>
+            </address>
+        </div>
+
+
+
+    </footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

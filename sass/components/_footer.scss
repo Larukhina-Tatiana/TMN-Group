@@ -1,0 +1,122 @@
+.footer {
+    /* Позиционирование */
+    padding-top: 28px;
+    padding-bottom: 30px;
+    /* Блочная модель */
+    /* Типографика */
+    text-align: center;
+    /* Оформление */
+
+    color: var(--white);
+    background: var(--lineal-footer), url(/images/footer/mobile/footer@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-mini-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background: var(--lineal-hero), url(/images/footer/mobile/footer@2x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-mini-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 228dpi),
+    screen and (min-resolution: 3dppx) {
+        background: var(--lineal-hero), url(/images/footer/mobile/footer@3x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Анимация */
+
+    /* Разное */
+    &__list {
+        display: flex;
+        flex-flow: column;
+        gap: 7px;
+        margin-bottom: 28px;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-variant: small-caps;
+        color: var(--white);
+        
+        @include transition($transition-property: color);
+
+        &:hover,
+        &:focus {
+            color: var(--main-color);
+        }
+        &:hover .footer__mail,
+        &:focus .footer__mail{
+            color: var(--white);
+            // @include transition($transition-property: color);
+        }
+    }
+
+    &__address {
+        padding-left: calc(98px - 40px);
+        margin-bottom: 40px;
+        text-align: left;
+        text-transform: lowercase;
+    }
+
+
+    &__phone_list {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        margin-bottom: 8px;
+    }
+
+    &__phone-iner {
+        display: flex;
+
+        &-num {
+            display: flex;
+            flex-flow: column;
+        }
+    }
+
+    &__phone-title {
+        font-weight: 700;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+
+
+    &__link--address {
+        font-weight: 400;
+        font-style: normal;
+        font-variant: normal;
+        // color: var(--white);
+        // @include transition($transition-property: color);
+    }
+
+    &__mail-title {
+        display: inline-block;
+        font-weight: 700;
+        font-style: normal;
+        margin-right: 9px;
+        text-transform: none;
+    }
+
+    &__copyright {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 11px;
+        line-height: calc(13/11);
+        text-transform: capitalize;
+
+    }
+}

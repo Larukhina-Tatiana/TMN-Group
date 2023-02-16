@@ -1,4 +1,4 @@
-.advertising-post {
+.preview-post {
     padding: 31px 32px 34px 33px;
 
     text-align: left;
@@ -25,12 +25,10 @@
     }
 
     &__name {
-        width: 239px;
-        height: 54px;
+        width: 233px;
     }
 
     &__name-title {
-        font-weight: 700;
         font-size: 16px;
         text-transform: uppercase;
         text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.08);
@@ -39,8 +37,8 @@
         &-accent {
             font-size: 14px;
             line-height: calc(16/14);
-            text-transform: capitalize;
             color: var(--accent);
+            text-transform: capitalize;
         }
     }
 
@@ -54,8 +52,11 @@
             color: var(--main-color);
             @include transition($transition-property: color);
         }
+
+        &:hover .header__svg,
+        &:focus .header__svg {
+            fill: var(--main-color);
+            @include transition($transition-property: fill);
+        }
     }
-
-
-
 }
