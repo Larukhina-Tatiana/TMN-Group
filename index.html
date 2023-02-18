@@ -18,39 +18,70 @@
                         <img src="/images/logo/295/Logo-mobile.png" alt="Логотип ТМН-Груп">
                     </a>
                 </li>
-                <li class="drop-down">
-                    <div class="phone-inner">
-                        <a class="phone_link" href="tel:+380675703489">(067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
-                            <!-- <span class="ttt"></span> -->
-                            <svg width="16" height="16">
-                                <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-rounded-down"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    
-                </li>
                 <li>
-                    <a href="">
-                        <svg width="24" height="24" aria-label="Іконка кошика">
-                            <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-Group-77"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <!-- <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <div class="dropdown">
+                        <a class="dropdown__link-container"
+                            href="tel:+380675703489">(067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89</a>
+                        <input type="checkbox" id="menu">
+                        <div class="dropdown__hover">
+                            <label for="menu" class="dropdown__arrow"></label>
+                        </div>
+                        <ul class="dropdown__list">
+                            <li>
+                                <a class="dropdown__link" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                            </li>
+                            <li>
+                                <a class="dropdown__link" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
+                            </li>
+                            <li>
+                                <a class="dropdown__link" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <button onclick="myFunction()" class="dropbtn"> -->
+                    <!-- <svg width="12" height="12">
+                                <use class="dropbtn__svg" href="./images/icons/mobile/icons.svg#icon-rounded-down"></use>
+                            </svg> -->
+                    <!-- </button> -->
+
+                    <!-- <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                                <li>
+                        <a class="phone_link1" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                        </li>
+                                <li>
+                        <a class="phone_link1" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
+                        </li>
+                                <li>
+                        <a class="phone_link1" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
+                        </li>
+                            </ul>
+                    </div> -->
+        </li>
+        <li>
+            <a href="">
+                <svg width="24" height="24" aria-label="Іконка кошика">
+                    <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-basket2"></use>
+                </svg>
+            </a>
+        </li>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="24" height="24" aria-label="Перемикач мобільного меню">
-                    <use class="header__svg" href="./images/icons/mibile/icons.svg#icon-Burger-menu"></use>
+                    <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-menu_40px"></use>
                 </svg>
             </button>
     
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
                     <svg width="24" height="24" aria-label="Перемикач мобільного меню">
-                        <use class="menu-toggle__icon-cross" href="./images/icons/mobile/Burger menu.svg"></use>
+                        <use class="menu-toggle__icon-cross" href="./images/icons/mobile/icons.svg#icon-close_40px"></use>
                     </svg>
-                </button> -->
+                </button>
+            </ul>
 
-            <!-- <ul class="menu">
+        <!-- <ul class="menu">
                         <li class="menu__item">
                             <a class="menu__link menu__link--active" href="./index.html">Студія</a>
                         </li>
@@ -390,7 +421,7 @@
                 <li class="footer__item"><a class="footer__link" href="">про компанію</a></li>
                 <li class="footer__item"><a class="footer__link" href="">блог</a></li>
             </ul>
-            <address>
+            <!-- <address>
                 <ul class="footer__address">
                     <ul class="footer__phone_list">
                         <div class="footer__phone-inner">
@@ -416,14 +447,37 @@
                         </a>
                     </li>
                 </ul>
-                <p class="footer__copyright">Copyright 	
+                <p class="footer__copyright">Copyright
                     &#169; 2023. TNM - Group</p>
-            </address>
+            </address> -->
         </div>
 
 
 
     </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="

@@ -10,7 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
-    padding: 25px 2px 0 2px; 
+    padding: 25px 2px 0 2px;
 
     &__list {
         display: flex;
@@ -66,15 +66,23 @@
     }
 
     // .phone-inner {
+    //     position: relative;
     //     display: flex;
     //     align-items: center;
     //     gap: 15px;
+
     // }
+
     .phone_link {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // gap: 15px;
         color: var(--white);
+
+        &1 {
+            color: var(--text);
+        }
     }
 
 
@@ -82,36 +90,76 @@
 
 
 
-    // & .container {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
+
+
+   
+
+    // стрелка вниз в меню виситна спане классом
+    // на сайте электроенергии
+    // <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
+    //     .ttt {
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 0;
+    //     margin-left: 2px;
+    //     vertical-align: middle;
+    //     border-top: 4px dashed;
+    //     border-top: 4px solid \9;
+    //     border-right: 4px solid transparent;
+    //     border-left: 4px solid transparent;
     // }
-
-    // &__phone-link {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: center;
-    //     color: var(--black);
-    //     padding-top: 28px;
-    //     padding-bottom: 28px;
-    // }
-
-
-// стрелка вниз в меню виситна спане классом
-// на сайте электроенергии
-// <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
-//     .ttt {
-//     display: inline-block;
-//     width: 0;
-//     height: 0;
-//     margin-left: 2px;
-//     vertical-align: middle;
-//     border-top: 4px dashed;
-//     border-top: 4px solid \9;
-//     border-right: 4px solid transparent;
-//     border-left: 4px solid transparent;
-// }
 
 
 }
+// .dropdown {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     gap: 15px;
+
+// }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 210px;
+    height: 160px;
+    top: 0;
+    left:0;
+
+    background: #FFFFFF;
+box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+
+    // background-color: #f1f1f1;
+    // min-width: 160px;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    // z-index: 1;
+}
+
+.dropbtn {
+    position: relative;
+    background-color: inherit;
+    // background: chocolate;
+    color: white;
+    // padding: 0px;
+
+    border: none;
+    display: flex;
+
+
+    &::before {
+        position: absolute;
+     content: "\25BC";
+        // content:"\2304";
+        color: #FFFFFF;
+        // font-size: 20px;
+        // top: -17px;
+        // left: -10px;
+        font-size: 50%;
+
+    // background-image: url(/images/icons/mobile/rounded-down.svg);
+
+    }
+}
+
+.show {display: block;}
+
