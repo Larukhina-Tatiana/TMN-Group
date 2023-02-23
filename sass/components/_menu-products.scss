@@ -1,0 +1,75 @@
+.menu-products {
+    position: absolute;
+    display: none;
+    top: 45px;
+    left: 0;
+    // width: 100%;
+    // height: 100vh;
+    width: 208px;
+    height: 656px;
+
+    padding: 35px 36px 20px 26px;
+    // background: var(--main-color);
+    background: cadetblue;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    z-index: 2;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+        display: block;
+        transform: translateX(0);
+    }
+}
+
+.menu__toggle1 {
+    position: absolute;
+    min-height: 24px;
+    min-width: 24px;
+    top: 25px;
+    right: 15px;
+
+    margin: 0;
+    padding: 0;
+    fill: var(--white);
+    background: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    &:hover &-icon-cross,
+    &:focus &-icon-cross,
+    &:hover &-icon-menu,
+    &:focus &-icon-menu {
+        fill: var(--accent);
+        @include transition($transition-property: fill);
+    }
+}
+
+.menu-btn {
+    display: inline-flex;
+    fill: var(--white);
+    border: none;
+    background: inherit;
+
+    & .icon-cross {
+        display: none;
+    }
+
+    &.is-open .icon-cross{
+        display: block;
+    }
+    &.is-open .icon-menu{
+        display: none;
+    }
+
+}
+
+.menu-link-inner {
+
+    display: flex;
+    align-items: center;
+}

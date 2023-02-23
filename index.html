@@ -12,86 +12,152 @@
 <body>
     <header class="header">
         <div class="container">
-            <ul class="header__list">
-                <li>
-                    <a href="">
-                        <img src="/images/logo/295/Logo-mobile.png" alt="Логотип ТМН-Груп">
+            <div class="header__nav">
+                <a href="">
+                    <img src="/images/logo/295/Logo-mobile.png" alt="Логотип ТМН-Груп">
+                </a>
+
+                <div class="dropdown">
+
+                    <a class="dropdown__link-container" href="tel:+380675703489">
+                        <svg class="header__svg" width="16" height="16" aria-label="Іконка телефона">
+                            <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                        </svg>
+                        (067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
+                        <svg class="dropdown__arrow arrow" width="10" height="10"
+                            aria-label="Перемикач випадаючого меню">
+                            <use href="./images/icons/mobile/icons.svg#icon-arrow-down">
+                            </use>
+                        </svg>
                     </a>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <a class="dropdown__link-container"
-                            href="tel:+380675703489">(067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89</a>
-                        <input type="checkbox" id="menu">
-                        <div class="dropdown__hover">
-                            <label for="menu" class="dropdown__arrow"></label>
-                        </div>
-                        <ul class="dropdown__list">
-                            <li>
-                                <a class="dropdown__link" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
-                            </li>
-                            <li>
-                                <a class="dropdown__link" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
-                            </li>
-                            <li>
-                                <a class="dropdown__link" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <!-- <button onclick="myFunction()" class="dropbtn"> -->
-                    <!-- <svg width="12" height="12">
-                                <use class="dropbtn__svg" href="./images/icons/mobile/icons.svg#icon-rounded-down"></use>
-                            </svg> -->
-                    <!-- </button> -->
+                    <ul class="dropdown__list">
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <!-- <div id="myDropdown" class="dropdown-content">
-                        <ul>
-                                <li>
-                        <a class="phone_link1" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
-                        </li>
-                                <li>
-                        <a class="phone_link1" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
-                        </li>
-                                <li>
-                        <a class="phone_link1" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
-                        </li>
-                            </ul>
-                    </div> -->
-        </li>
-        <li>
-            <a href="">
-                <svg width="24" height="24" aria-label="Іконка кошика">
-                    <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-basket2"></use>
-                </svg>
-            </a>
-        </li>
-
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="24" height="24" aria-label="Перемикач мобільного меню">
-                    <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-menu_40px"></use>
-                </svg>
-            </button>
-    
-            <div class="menu-container js-menu-container" id="mobile-menu">
-                <button class="menu-toggle js-close-menu">
+                <a class="header__basket" href="">
+                    <svg width="24" height="24" aria-label="Іконка кошика">
+                        <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-basket_icon"></use>
+                    </svg>
+                </a>
+                <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="24" height="24" aria-label="Перемикач мобільного меню">
-                        <use class="menu-toggle__icon-cross" href="./images/icons/mobile/icons.svg#icon-close_40px"></use>
+                        <use class="menu__toggle-icon-menu" href="./images/icons/mobile/icons.svg#icon-burger-menu">
+                        </use>
                     </svg>
                 </button>
-            </ul>
 
-        <!-- <ul class="menu">
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu__toggle js-close-menu">
+                        <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+                            <use class="menu__toggle-icon-cross" href="./images/icons/mobile/icons.svg#icon-close_menu">
+                            </use>
+                        </svg>
+                    </button>
+
+
+                    <ul class="menu">
                         <li class="menu__item">
-                            <a class="menu__link menu__link--active" href="./index.html">Студія</a>
+                            <div class="menu-link-inner">
+                                <a class="menu__link menu__link--accent" href="">наша продукція</a>
+
+
+                                <button class="menu-btn" aria-expanded="false" data-menu-button
+                                    aria-controls="menu-products">
+                                    <svg width="12" height="12" aria-label="Перемикач мобільного меню">
+                                        <use class="icon-menu" href="./images/icons/mobile/icons.svg#icon-arrow-down">
+                                        </use>
+                                        <use class="icon-cross" href="./images/icons/mobile/icons.svg#icon-arrow-up">
+                                        </use>
+                                    </svg>
+                                </button>
+
+                                <!-- <div class="menu-products data-menu" id="menu-products">
+
+                                    <ul class="menu_products">
+                                        <li class="menu__item">
+                                            <div>
+                                                <a class="menu__link menu__link--accent" href="">наша продукція</a>
+                                            </div>
+
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">рукавички нітрилові</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">рукавиці латексні</a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">харчова промисловість</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">рукавички медичні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">рукавички хірургічні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">хімічна промисловість і
+                                                фармацевтика</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">оглядові рукавички</a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">стоматологічні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">для клінігових робіт</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">сад / город</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">ремонт і будівництво</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">для салонів краси</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">господарські рукавички</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+
+                            </div>
+
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--accent" href="./portfolio.html">Портфоліо</a>
+                            <a class="menu__link menu__link--accent" href="./portfolio.html">про компанію</a>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link menu__link--accent" href="#">Контакти</a>
+                            <a class="menu__link menu__link--accent" href="./portfolio.html">блог</a>
                         </li>
-                    </ul> -->
+
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="#">Наші контакти</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="#">Пошук</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="#">мова</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <section class="hero">
@@ -421,13 +487,13 @@
                 <li class="footer__item"><a class="footer__link" href="">про компанію</a></li>
                 <li class="footer__item"><a class="footer__link" href="">блог</a></li>
             </ul>
-            <!-- <address>
+            <address>
                 <ul class="footer__address">
-                    <ul class="footer__phone_list">
+                    <li class="footer__phone_list">
                         <div class="footer__phone-inner">
                             <p class="footer__phone-title">телефон:</p>
                         </div>
-                        <div class="footer__phone-inner-num">
+                        <ul class="footer__phone-inner-num">
                             <li>
                                 <a class="footer__link footer__link--address"
                                     href="tel:+380444266444">(044)&nbsp;426-64-44</a>
@@ -436,9 +502,9 @@
                                 <a class="footer__link footer__link--address"
                                     href="tel:+380675703489">(067)&nbsp;570-34-89</a>
                             </li>
-                        </div>
+                        </ul>
 
-                    </ul>
+                    </li>
 
                     <li>
                         <p class="footer__mail-title">E-mail:</p>
@@ -449,7 +515,7 @@
                 </ul>
                 <p class="footer__copyright">Copyright
                     &#169; 2023. TNM - Group</p>
-            </address> -->
+            </address>
         </div>
 
 
@@ -483,6 +549,9 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu-products.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/script.js"></script>
 
 </body>
 

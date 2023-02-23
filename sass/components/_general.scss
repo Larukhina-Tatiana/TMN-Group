@@ -3,3 +3,6 @@ body {
     margin: 0%;
 }
 
+body.mouse .dropdown:hover .dropdown__list {
+    display: block;
+}

@@ -12,12 +12,14 @@
     border-radius: 5px;
     padding: 25px 2px 0 2px;
 
-    &__list {
+    &__nav {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
+    }
+    &__basket {
+        display: inline-flex;
     }
 
     // &>ul>li {
@@ -39,9 +41,11 @@
     }
 
     &__svg {
-        background: var(--lineal-hero);
+        // background: var(--lineal-hero);
         fill: var(--white);
     }
+
+
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -92,7 +96,7 @@
 
 
 
-   
+
 
     // стрелка вниз в меню виситна спане классом
     // на сайте электроенергии
@@ -111,6 +115,7 @@
 
 
 }
+
 // .dropdown {
 //     position: relative;
 //     display: flex;
@@ -124,10 +129,10 @@
     width: 210px;
     height: 160px;
     top: 0;
-    left:0;
+    left: 0;
 
     background: #FFFFFF;
-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
 
     // background-color: #f1f1f1;
     // min-width: 160px;
@@ -148,7 +153,7 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
 
     &::before {
         position: absolute;
-     content: "\25BC";
+        content: "\25BC";
         // content:"\2304";
         color: #FFFFFF;
         // font-size: 20px;
@@ -156,10 +161,11 @@ box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
         // left: -10px;
         font-size: 50%;
 
-    // background-image: url(/images/icons/mobile/rounded-down.svg);
+        // background-image: url(/images/icons/mobile/rounded-down.svg);
 
     }
 }
 
-.show {display: block;}
-
+.show {
+    display: block;
+}

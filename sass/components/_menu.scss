@@ -1,0 +1,114 @@
+.menu-container {
+display: none;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    // width: 100%;
+    // height: 100vh;
+    // width: 200px;
+    // height: 210px;
+
+    padding: 35px 26px 20px 26px;
+
+    background: var(--main-color);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    z-index: 2;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+}
+
+.menu {
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__toggle {
+        display: flex;
+        // position: absolute;
+        min-height: 24px;
+        min-width: 24px;
+        top: 25px;
+        right: 15px;
+
+        margin: 0;
+        padding: 0;
+        fill: var(--white);
+        background: inherit;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:hover &-icon-cross,
+        &:focus &-icon-cross,
+        &:hover &-icon-menu,
+        &:focus &-icon-menu {
+            fill: var(--accent);
+            @include transition($transition-property: fill);
+        }
+
+    }
+    
+
+    &__link {
+        display: inline-block;
+        font-weight: 700;
+        color: var(--white);
+        font-variant: all-small-caps;
+        
+        &--active,
+        &--accent:hover,
+        &--accent:focus {
+            color: var(--accent);
+        }
+    }
+}
+
+.js-close-menu {
+    top: 5px;
+}
+
+// @media (min-width: $tablet) {
+//     .menu-toggle {
+//         display: none;
+//     }
+// }
+
+
+// @media screen and (min-width: $mobile) {
+//     .menu-container {
+//         padding: 48px 40px;
+//     }
+
+// .menu {
+//     margin-bottom: 130px;
+
+//     &__item:not(:last-child) {
+//         margin-bottom: 32px;
+//     }
+
+//     &__link {
+//         // @include font-style($font-family: null, $font-weight: null, $font-size: 40px, $line-height: calc(47/40), $letter-spacing: null, $color: null);
+//     }
+
+//     &__contacts-list {
+
+//         &__link {
+//             // @include font-style($font-family: null, $font-weight: null, $font-size: 34px, $line-height: calc(40/34), $letter-spacing: null, $color: null, $background-color: null);
+
+//             &--style {
+//                 font-size: 24px;
+//                 color: $priority-text-color;
+//                 line-height: calc(28/24);
+//             }
+//         }
+//     }
+// }
+// }
