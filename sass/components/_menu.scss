@@ -54,7 +54,10 @@ display: none;
             @include transition($transition-property: fill);
         }
 
-    }
+        @media (min-width: $desctop) {
+                display: none;
+        }
+}
     
 
     &__link {
@@ -75,11 +78,7 @@ display: none;
     top: 5px;
 }
 
-// @media (min-width: $tablet) {
-//     .menu-toggle {
-//         display: none;
-//     }
-// }
+
 
 
 // @media screen and (min-width: $mobile) {

@@ -13,18 +13,16 @@
     <header class="header">
         <div class="container">
             <div class="header__nav">
-                <a href="">
-                    <img src="/images/logo/295/Logo-mobile.png" alt="Логотип ТМН-Груп">
-                </a>
+                <a class="logo" href="./index.html"></a>
 
                 <div class="dropdown">
 
-                    <a class="dropdown__link-container" href="tel:+380675703489">
-                        <svg class="header__svg" width="16" height="16" aria-label="Іконка телефона">
+                    <a class="dropdown__link dropdown__link-container" href="tel:+380675703489">
+                        <svg class="header__svg" max-width="24" aria-label="Іконка телефона">
                             <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
                         </svg>
                         (067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
-                        <svg class="dropdown__arrow arrow" width="10" height="10"
+                        <svg class="dropdown__arrow arrow" max-width="16"
                             aria-label="Перемикач випадаючого меню">
                             <use href="./images/icons/mobile/icons.svg#icon-arrow-down">
                             </use>
@@ -43,12 +41,27 @@
                         </li>
                     </ul>
                 </div>
+                <!-- <div class="search-inner">
+                    <form class="form1 f-search js-init _module-loaded" method="get" action="https://" data-form-search="{&quot;minLength&quot;:3,&quot;delay&quot;:350}" novalidate="novalidate">
+                        <div class="form-group" bis_skin_checked="1">
+                            <input class="form-group__input f-search__input" type="search" name="search" placeholder="Пошук" value="" autocomplete="off" data-rule-minlength="3" data-search-input="" required="required">
+                                        <div class="f-search-suggest" data-search-suggest="" bis_skin_checked="1"></div>
+                                </div>
+                        <button type="submit" class="button1 f-search__button">
+                            <svg width="17" height="16">
+                                <use href="./images/icons/mobile/icons.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        </form>
+                </div> -->
+                
 
                 <a class="header__basket" href="">
-                    <svg width="24" height="24" aria-label="Іконка кошика">
-                        <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-basket_icon"></use>
+                    <svg class="header__svg header__svg--width" aria-label="Іконка кошика">
+                        <use href="./images/icons/mobile/icons.svg#icon-basket_icon"></use>
                     </svg>
                 </a>
+                
                 <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="24" height="24" aria-label="Перемикач мобільного меню">
                         <use class="menu__toggle-icon-menu" href="./images/icons/mobile/icons.svg#icon-burger-menu">
@@ -157,6 +170,24 @@
                         </li>
                     </ul>
                 </div>
+
+                
+            </div>
+            <div class="header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">наша продукція</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">про компанію</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">блог</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">контакти</a>
+                    </li>
+                </ul>
             </div>
         </div>
 

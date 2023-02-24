@@ -12,41 +12,6 @@
     border-radius: 5px;
     padding: 25px 2px 0 2px;
 
-    &__nav {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__basket {
-        display: inline-flex;
-    }
-
-    // &>ul>li {
-    //     position: relative;
-    // white-space: nowrap;
-    // float: left;
-    // }
-
-    // & .drop-down::after {
-    //     content: "🠗";
-    //     font-family: IcoFont;
-    //     padding-left: 5px;
-    //     color: var(--white);
-    // }
-
-    & .hero {
-        padding-top: 41px;
-        padding-bottom: 45px;
-    }
-
-    &__svg {
-        // background: var(--lineal-hero);
-        fill: var(--white);
-    }
-
-
-
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-mini-device-pixel-ratio: 2/1),
@@ -69,103 +34,96 @@
         background-repeat: no-repeat;
     }
 
-    // .phone-inner {
-    //     position: relative;
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 15px;
+    &__nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-    // }
+    &__basket {
+        display: inline-flex;
+        filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
+    }
 
-    .phone_link {
-        // position: relative;
-        // display: flex;
-        // align-items: center;
-        // gap: 15px;
-        color: var(--white);
+    & .hero {
+        padding-top: 41px;
+        padding-bottom: 45px;
+    }
 
-        &1 {
-            color: var(--text);
+    &__svg {
+        width: 16px;
+        height: 16px;
+        fill: var(--white);
+    }
+
+
+    @media screen and (min-width: $desctop) {
+        padding: 52px 0 197px 0;
+
+        &__svg {
+            width: 24px;
+            height: 24px;
+
+            &--width {
+                width: 34px;
+                height: 34px;
+            }
         }
     }
-
-
-
-
-
-
-
-
-
-
-    // стрелка вниз в меню виситна спане классом
-    // на сайте электроенергии
-    // <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
-    //     .ttt {
-    //     display: inline-block;
-    //     width: 0;
-    //     height: 0;
-    //     margin-left: 2px;
-    //     vertical-align: middle;
-    //     border-top: 4px dashed;
-    //     border-top: 4px solid \9;
-    //     border-right: 4px solid transparent;
-    //     border-left: 4px solid transparent;
-    // }
-
-
 }
 
-// .dropdown {
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     gap: 15px;
+.header-menu {
+    @media screen and (max-width: $max-width) {
+        display: none;
+    }
 
-// }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 210px;
-    height: 160px;
-    top: 0;
-    left: 0;
+    @media screen and (min-width: $desctop) {
+        // display: flex;
+        background: var(--main-color);
+        border-radius: 5px;
+        box-shadow: inset -4px -4px 13px rgba(0, 0, 0, 0.07), inset 4px 4px 11px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        --webkit-backdrop-filter: blur(2px);
 
-    background: #FFFFFF;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+        &__list {
+            display: flex;
+            justify-content: space-around;
+        }
 
-    // background-color: #f1f1f1;
-    // min-width: 160px;
-    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    // z-index: 1;
-}
+        &__item:not(:first-child) {
+            &::before {
+                content: "";
+                border-right: 1px solid var(--white);
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+            }
+        }
 
-.dropbtn {
-    position: relative;
-    background-color: inherit;
-    // background: chocolate;
-    color: white;
-    // padding: 0px;
+        &__link {
+            padding: 9px 75px 10px;
 
-    border: none;
-    display: flex;
-
-
-    &::before {
-        position: absolute;
-        content: "\25BC";
-        // content:"\2304";
-        color: #FFFFFF;
-        // font-size: 20px;
-        // top: -17px;
-        // left: -10px;
-        font-size: 50%;
-
-        // background-image: url(/images/icons/mobile/rounded-down.svg);
-
+            &:hover,
+            &:focus {
+                color: var(--accent);
+                @include transition($transition-property: color);
+            }
+        }
     }
 }
 
-.show {
-    display: block;
-}
+
+// стрелка вниз в меню виситна спане классом
+// на сайте электроенергии
+// <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
+//     .ttt {
+//     display: inline-block;
+//     width: 0;
+//     height: 0;
+//     margin-left: 2px;
+//     vertical-align: middle;
+//     border-top: 4px dashed;
+//     border-top: 4px solid \9;
+//     border-right: 4px solid transparent;
+//     border-left: 4px solid transparent;
+// }

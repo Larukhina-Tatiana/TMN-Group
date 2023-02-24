@@ -1,4 +1,43 @@
 .logo {
-    // width: 167px;
-    padding: 23px 0 24px 0;
+
+    &::before {
+        content: url(/images/logo/295/Logo-mobile.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-mini-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            content: url(/images/logo/logo-mobile@2x.png);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (-o-mini-device-pixel-ratio: 3/1),
+        screen and (min-resolution: 228dpi),
+        screen and (min-resolution: 3dppx) {
+            content: url(/images/logo/logo-mobile@3x.png);
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        margin-right: 322px;
+        content: url(/images/logo/logo@1x.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-mini-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            content: url(/images/logo/logo@2x.png);
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (-o-mini-device-pixel-ratio: 3/1),
+        screen and (min-resolution: 228dpi),
+        screen and (min-resolution: 3dppx) {
+            content: url(/images/logo/logo@3x.png);
+        }
+    }
 }
