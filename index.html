@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна</title>
+    <title>Головна тмн - груп</title>
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 
@@ -22,8 +22,7 @@
                             <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
                         </svg>
                         (067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
-                        <svg class="dropdown__arrow arrow" max-width="16"
-                            aria-label="Перемикач випадаючого меню">
+                        <svg class="dropdown__arrow arrow" max-width="16" aria-label="Перемикач випадаючого меню">
                             <use href="./images/icons/mobile/icons.svg#icon-arrow-down">
                             </use>
                         </svg>
@@ -54,14 +53,14 @@
                         </button>
                         </form>
                 </div> -->
-                
+
 
                 <a class="header__basket" href="">
                     <svg class="header__svg header__svg--width" aria-label="Іконка кошика">
                         <use href="./images/icons/mobile/icons.svg#icon-basket_icon"></use>
                     </svg>
                 </a>
-                
+
                 <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg width="24" height="24" aria-label="Перемикач мобільного меню">
                         <use class="menu__toggle-icon-menu" href="./images/icons/mobile/icons.svg#icon-burger-menu">
@@ -171,7 +170,7 @@
                     </ul>
                 </div>
 
-                
+
             </div>
             <div class="header-menu">
                 <ul class="header-menu__list">
@@ -193,45 +192,70 @@
 
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">тмн - груп</h1>
-                <p class="hero__text">Уповноважені представники ряду світових виробників виробів медичного призначення:
-                    WRP, Heliomed,
-                    LinkMed.,. Ваш надійний партнер в області профілактики інфекцій, пов’язаних з наданням медичної
-                    допомоги.</p>
-                <button class="button hero__button" type="button">Переглянути продукцію</button>
-
-                <article class="preview-post">
-                    <h2 class="h2">covid-19</h2>
-                    <p class="preview-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A morbi
-                        dit amet, consectetur adipiscing
-                        elinterdum in viverra eget viverra dignissim neque.dolor sit amet, consectetur adipiscing el</p>
-                    <div class="preview-post__img">
-                        <picture>
-                            <source srcset="
-                            ./images/hero/mobile/preview-post/profeel@1x.webp 213w,
-                            ./images/hero/mobile/preview-post/profeel@2x.webp 424w,
-                            ./images/hero/mobile/preview-post/profeel@3x.webp 635w
-                            " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 213px" />
-                            <img srcset="
-                                ./images/hero/mobile/preview-post/profeel@1x.jpg 213w,
-                                ./images/hero/mobile/preview-post/profeel@2x.jpg 424w,
-                                ./images/hero/mobile/preview-post/profeel@3x.jpg 635w
-                            " src="./images/hero/mobile/preview-post/profeel@1x.jpg"
-                                alt="Фото коробок оглядових руковичок Profeel" sizes="(min-width: 375px) 213px" />
-                        </picture>
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title">тмн - груп</h1>
+                        <p class="hero__text">Уповноважені представники ряду світових виробників виробів медичного
+                            призначення:
+                            WRP, Heliomed,
+                            LinkMed.,. Ваш надійний партнер в області профілактики інфекцій, пов’язаних з наданням
+                            медичної
+                            допомоги.</p>
+                        <button class="button hero__button" type="button">Переглянути продукцію</button>
                     </div>
-                    <div class="preview-post__name">
-                        <h3 class="preview-post__name-title">Оглядові рукавички ECO&#174;
-                            <span class="preview-post__name-title-accent">Examination gloves Eco&#174;
-                            </span>
-                        </h3>
-                        <a class="preview-post__link" href="">ECO&#174; подвійна система..
-                            <svg width="23" height="7" aria-label="Іконка стрілка вправо">
-                                <use class="header__svg" href="./images/icons/mobile/icons.svg#icon-Arrow-right"></use>
-                            </svg>
-                        </a>
+                    <div class="preview-post__inner">
+                        <article class="preview-post">
+                            <h2 class="h2">covid-19</h2>
+                            <p class="preview-post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+                                morbi
+                                dit amet, consectetur adipiscing
+                                elinterdum in viverra eget viverra dignissim neque.dolor sit amet, consectetur
+                                adipiscing el
+                            </p>
+                            <div class="preview-post__container">
+                                <div class="preview-post__img">
+                                <picture>
+                                    <source srcset="
+                                ./images/hero/preview-post/d-profeel@1x.webp 184w,
+                                ./images/hero/preview-post/d-profeel@2x.webp 366w,
+                                ./images/hero/preview-post/d-profeel@3x.webp 549w
+                                " type="image/webp" media="(min-width: $desctop)" sizes="(min-width: $desctop) 184px" />
+                                <source srcset="
+                                ./images/hero/preview-post/d-profeel@1x.jpg 184w,
+                                ./images/hero/preview-post/d-profeel@2x.jpg 366w,
+                                ./images/hero/preview-post/d-profeel@3x.jpg 549w
+                                " media="(min-width: $desctop)" sizes="(min-width: $desctop) 184px" />
+                                    <source srcset="
+                                ./images/hero/preview-post/m-profeel@1x.webp 213w,
+                                ./images/hero/preview-post/m-profeel@2x.webp 424w,
+                                ./images/hero/preview-post/m-profeel@3x.webp 635w
+                                " type="image/webp" media="(min-width: 375px)" sizes="(min-width: 375px) 213px" />
+                                    <img srcset="
+                                    ./images/hero/preview-post/m-profeel@1x.jpg 213w,
+                                    ./images/hero/preview-post/m-profeel@2x.jpg 424w,
+                                    ./images/hero/preview-post/m-profeel@3x.jpg 635w
+                                " src="./images/hero/preview-post/profeel@1x.jpg"
+                                        alt="Фото коробок оглядових руковичок Profeel"
+                                        sizes="(min-width: 375px) 213px" />
+                                </picture>
+                            </div>
+                            <div class="preview-post__name">
+                                <h3 class="preview-post__name-title">Оглядові рукавички ECO&#174;
+                                    <span class="preview-post__name-title-accent">Examination gloves Eco&#174;
+                                    </span>
+                                </h3>
+                                <a class="preview-post__link" href="">ECO&#174;Подвійна Система Надягання Рукавичок для виявлення пункції..
+                                    <svg width="23" height="7" aria-label="Іконка стрілка вправо">
+                                        <use class="header__svg"
+                                            href="./images/icons/mobile/icons.svg#icon-Arrow-right">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
+                        </article>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     </header>

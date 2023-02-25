@@ -283,12 +283,18 @@ body.mouse .dropdown:hover .dropdown__list {
   line-height: 0.9444444444;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1200px) {
+  .h2 {
+    font-size: 20px;
+    line-height: 0.85;
+  }
+}
 
 .header {
   justify-content: space-between;
   align-items: center;
   color: var(--white);
-  background: var(--lineal-hero), url(/images/hero/mobile/hero@1x.jpg);
+  background: var(--lineal-hero), url(/images/hero/m-hero@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -297,7 +303,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .header {
-    background: var(--lineal-hero), url(/images/hero/mobile/hero@2x.jpg);
+    background: var(--lineal-hero), url(/images/hero/m-hero@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,7 +311,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .header {
-    background: var(--lineal-hero), url(/images/hero/mobile/hero@3x.jpg);
+    background: var(--lineal-hero), url(/images/hero/m-hero@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -316,7 +322,6 @@ body.mouse .dropdown:hover .dropdown__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 .header__basket {
   display: inline-flex;
@@ -325,6 +330,7 @@ body.mouse .dropdown:hover .dropdown__list {
 .header .hero {
   padding-top: 41px;
   padding-bottom: 45px;
+  margin-bottom: 20px;
 }
 .header__svg {
   width: 16px;
@@ -334,7 +340,31 @@ body.mouse .dropdown:hover .dropdown__list {
 @media screen and (min-width: 1200px) {
   .header {
     padding: 52px 0 197px 0;
+    background: var(--lineal-hero), url(/images/hero/d-hero@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 25px 2px 0 2px;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .header {
+    background: var(--lineal-hero), url(/images/hero/d-hero@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .header {
+    background: var(--lineal-hero), url(/images/hero/d-hero@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
   .header__svg {
     width: 24px;
     height: 24px;
@@ -342,6 +372,11 @@ body.mouse .dropdown:hover .dropdown__list {
   .header__svg--width {
     width: 34px;
     height: 34px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__nav {
+    margin-bottom: 20px;
   }
 }
 
@@ -432,10 +467,40 @@ body.mouse .dropdown:hover .dropdown__list {
   width: 256px;
   height: 35px;
   padding: 7px 46px 6px;
-  margin-bottom: 33px;
   font-size: 15px;
   line-height: 1.4666666667;
   text-transform: none;
+}
+@media screen and (max-width: 1199px) {
+  .hero .hero__button {
+    margin-bottom: 33px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__content {
+    display: flex;
+    flex-flow: column;
+    width: 36%;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero__title {
+    font-size: 69px;
+  }
+  .hero__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1666666667;
+  }
+  .hero .hero__button {
+    height: 45px;
+    padding: 11px 35px;
+    font-size: 16px;
+  }
 }
 
 .logo::before {
@@ -647,6 +712,7 @@ body.mouse .dropdown:hover .dropdown__list {
   position: absolute;
   top: 100%;
   right: -10px;
+  z-index: 1;
 }
 .dropdown__list::before {
   content: "";
@@ -710,10 +776,10 @@ body.mouse .dropdown:hover .dropdown__list {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.4375;
-  text-transform: capitalize;
   color: var(--white);
   border: none;
   background: var(--main-color);
+  text-transform: capitalize;
   box-shadow: 4px 4px 31px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
 }
@@ -723,7 +789,6 @@ body.mouse .dropdown:hover .dropdown__list {
   transition-duration: 450ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .preview-post {
   padding: 31px 32px 34px 33px;
   text-align: left;
@@ -741,9 +806,13 @@ body.mouse .dropdown:hover .dropdown__list {
   width: 230px;
   height: 118px;
   padding: 25px 8px;
-  margin-bottom: 18px;
   background: var(--white);
   border-radius: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .preview-post__img {
+    margin-bottom: 18px;
+  }
 }
 .preview-post__name {
   width: 233px;
@@ -773,6 +842,34 @@ body.mouse .dropdown:hover .dropdown__list {
   fill: var(--main-color);
   transition-duration: 450ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .preview-post {
+    padding: 67px 44px 64px 47px;
+    width: 551px;
+  }
+  .preview-post__inner {
+    display: flex;
+  }
+  .preview-post__container {
+    display: flex;
+    gap: 18px;
+  }
+  .preview-post__text {
+    margin-bottom: 16px;
+  }
+  .preview-post__img {
+    width: 199px;
+    height: 109px;
+    padding: 18px 8px;
+  }
+  .preview-post__name {
+    width: 237px;
+  }
+  .preview-post__link {
+    font-size: 16px;
+    line-height: 1.3125;
+  }
 }
 
 .products {

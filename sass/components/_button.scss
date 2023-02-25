@@ -1,22 +1,16 @@
 .button {
-    
-    
-
     width: 230px;
     height: 48px;
     padding: 12px 68px 12px 76px;
 
     font-weight: 700;
-
-
     font-size: 16px;
     line-height: calc(23/16);
-
-    text-transform: capitalize;
 
     color: var(--white);
     border: none;
     background: var(--main-color);
+    text-transform: capitalize;
     box-shadow: 4px 4px 31px rgba(0, 0, 0, 0.16);
     border-radius: 5px;
 
@@ -25,6 +19,10 @@
         color: var(--main-color);
         background: var(--white);
         @include transition($transition-property: (color, background));
+        
+    }
+
+    @media screen and (min-width: $desctop) {
         
     }
 }

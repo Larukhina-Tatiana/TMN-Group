@@ -9,6 +9,8 @@
     filter: drop-shadow(-3px -3px 12px rgba(0, 0, 0, 0.06)) drop-shadow(4px 4px 29px rgba(0, 0, 0, 0.17));
     backdrop-filter: blur(25px);
 
+
+
     &__text {
         margin-top: 10px;
         margin-bottom: 14px;
@@ -18,7 +20,7 @@
         width: 230px;
         height: 118px;
         padding: 25px 8px;
-        margin-bottom: 18px;
+        @media screen and (max-width: $max-width) {margin-bottom: 18px;}
 
         background: var(--white);
         border-radius: 5px;
@@ -57,6 +59,33 @@
         &:focus .header__svg {
             fill: var(--main-color);
             @include transition($transition-property: fill);
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding: 67px 44px 64px 47px;
+        width: 551px;
+        &__inner {
+            display: flex;
+        }
+        &__container {
+            display: flex;
+            gap: 18px;
+        }
+        &__text {
+            margin-bottom: 16px;
+        }
+        &__img {
+            width: 199px;
+            height: 109px;
+            padding: 18px 8px;
+        }
+        &__name {
+            width: 237px;
+        }
+        &__link {
+            font-size: 16px;
+            line-height: calc(21/16);
         }
     }
 }

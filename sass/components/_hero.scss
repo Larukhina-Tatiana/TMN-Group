@@ -19,11 +19,41 @@
         width: 256px;
         height: 35px;
         padding: 7px 46px 6px;
-        margin-bottom: 33px;
-
+        @media screen and (max-width: $max-width) {margin-bottom: 33px;}
         font-size: 15px;
         line-height: calc(22/15);
 
         text-transform: none;
+    }
+
+    @media screen and (min-width: $desctop) {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__content {
+            display: flex;
+            flex-flow: column;
+            width: 36%;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &__title {
+            font-size: 69px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: calc(21/18);
+        }
+
+        & &__button {
+            // width: 256px;
+            height: 45px;
+            padding: 11px 35px;
+            font-size: 16px;
+        }
     }
 }
