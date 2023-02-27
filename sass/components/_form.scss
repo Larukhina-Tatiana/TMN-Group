@@ -1,7 +1,10 @@
 .form {
     width: 100%;
-    margin-top: 45px;
-    font-family: 'Tahoma';
+
+    @media screen and (max-width: $max-width) {
+        margin-top: 45px;
+    }
+
     font-size: 14px;
     line-height: calc(23/14);
     color: var(--form-color);
@@ -12,6 +15,7 @@
     backdrop-filter: blur(18px);
 
     &__title {
+        margin-bottom: 28px;
         font-size: 15px;
         line-height: calc(21/15);
         letter-spacing: 0.06em;
@@ -24,22 +28,25 @@
         display: block;
 
     }
+
     &__input {
         width: 100%;
         padding: 5px 0;
         margin-bottom: 28px;
+        font-family: 'Tahoma';
         color: var(--form-color);
         background: inherit;
 
         backdrop-filter: blur(18px);
         border: none;
-        border-bottom:  0.5px solid var(--form-color);
+        border-bottom: 0.5px solid var(--form-color);
 
         &::placeholder {
             color: var(--form-color);
             border-radius: 5px;
         }
     }
+
     &__button {
         display: flex;
         align-items: center;
@@ -53,5 +60,24 @@
         line-height: calc(23/16);
         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
         // box-shadow: 4px 4px 31px rgba(0, 0, 0, 0.16);
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding: 55px 44px 57px 43px;
+        font-size: 16px;
+        line-height: calc(23/16);
+
+        &__title {
+            font-size: 18px;
+            line-height: calc(21/18);
+        }
+
+        &__label {
+            display: block;
+        }
+
+        &__button {
+            margin-top: 9px;
+            }
     }
 }

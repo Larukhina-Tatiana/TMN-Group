@@ -188,6 +188,7 @@ summary {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -327,11 +328,6 @@ body.mouse .dropdown:hover .dropdown__list {
   display: inline-flex;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
 }
-.header .hero {
-  padding-top: 41px;
-  padding-bottom: 45px;
-  margin-bottom: 20px;
-}
 .header__svg {
   width: 16px;
   height: 16px;
@@ -453,6 +449,8 @@ body.mouse .dropdown:hover .dropdown__list {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  padding-top: 41px;
+  padding-bottom: 45px;
 }
 .hero__title {
   font-size: 50px;
@@ -477,6 +475,10 @@ body.mouse .dropdown:hover .dropdown__list {
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 77px;
+    padding-bottom: 197px;
+  }
   .hero__inner {
     display: flex;
     justify-content: space-between;
@@ -519,16 +521,18 @@ body.mouse .dropdown:hover .dropdown__list {
 @media screen and (min-width: 1200px) {
   .logo {
     margin-right: 322px;
+  }
+  .logo::before {
     content: url(/images/logo/logo@1x.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .logo {
+  .logo::before {
     content: url(/images/logo/logo@2x.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
-  .logo {
+  .logo::before {
     content: url(/images/logo/logo@3x.png);
   }
 }
@@ -744,17 +748,6 @@ body.mouse .dropdown:hover .dropdown__list {
   }
 }
 
-.nav__list {
-  display: flex;
-  gap: 25px;
-  justify-content: space-between;
-}
-.nav__link {
-  color: var(--black);
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
 .lang {
   display: flex;
   gap: 16px;
@@ -885,14 +878,14 @@ body.mouse .dropdown:hover .dropdown__list {
   border-radius: 5px;
 }
 .products__item:nth-child(1) {
-  background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-nitrile-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(1) {
-    background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-nitrile-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -900,21 +893,21 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(1) {
-    background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-nitrile-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 .products__item:nth-child(2) {
-  background: var(--lineal-products), url(/images/category/mobile/latex-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-latex-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(2) {
-    background: var(--lineal-products), url(/images/category/mobile/latex-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-latex-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -922,21 +915,21 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(2) {
-    background: var(--lineal-products), url(/images/category/mobile/latex-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-latex-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 .products__item:nth-child(3) {
-  background: var(--lineal-products), url(/images/category/mobile/medical-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-medical-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(3) {
-    background: var(--lineal-products), url(/images/category/mobile/medical-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-medical-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -944,7 +937,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(3) {
-    background: var(--lineal-products), url(/images/category/mobile/medical-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-medical-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -954,14 +947,14 @@ body.mouse .dropdown:hover .dropdown__list {
   padding: 100px 32px 21px 124px;
 }
 .products__item:nth-child(4) {
-  background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-food-industry-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(4) {
-    background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-food-industry-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -969,7 +962,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(4) {
-    background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-food-industry-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -979,14 +972,14 @@ body.mouse .dropdown:hover .dropdown__list {
   padding: 118px 24px 18px 117px;
 }
 .products__item:nth-child(5) {
-  background: var(--lineal-products), url(/images/category/mobile/economic-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-economic-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(5) {
-    background: var(--lineal-products), url(/images/category/mobile/economic-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-economic-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -994,21 +987,21 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(5) {
-    background: var(--lineal-products), url(/images/category/mobile/economic-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-economic-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 .products__item:nth-child(6) {
-  background: var(--lineal-products), url(/images/category/mobile/construction-gloves@1x.jpg);
+  background: var(--lineal-products), url(/images/products/m-construction-gloves@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .products__item:nth-child(6) {
-    background: var(--lineal-products), url(/images/category/mobile/construction-gloves@2x.jpg);
+    background: var(--lineal-products), url(/images/products/m-construction-gloves@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1016,7 +1009,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .products__item:nth-child(6) {
-    background: var(--lineal-products), url(/images/category/mobile/construction-gloves@3x.jpg);
+    background: var(--lineal-products), url(/images/products/m-construction-gloves@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1025,7 +1018,7 @@ body.mouse .dropdown:hover .dropdown__list {
 .products__item:nth-child(6) .products__link {
   padding: 118px 22px 18px 138px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1199px) {
   .products__item:not(last-child) {
     margin-bottom: 5px;
   }
@@ -1049,12 +1042,186 @@ body.mouse .dropdown:hover .dropdown__list {
   transition-duration: 450ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .products {
+    padding-top: 87px;
+    padding-bottom: 103px;
+  }
+  .products .h2 {
+    margin-bottom: 35px;
+  }
+  .products__link {
+    font-size: 18px;
+  }
+  .products__list {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+  }
+  .products__item {
+    width: calc((100% - 20px) / 3);
+  }
+  .products__item:nth-child(1) {
+    background: var(--lineal-products), url(/images/products/d-nitrile-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(1) {
+    background: var(--lineal-products), url(/images/products/d-nitrile-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(1) {
+    background: var(--lineal-products), url(/images/products/d-nitrile-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(2) {
+    background: var(--lineal-products), url(/images/products/d-latex-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(2) {
+    background: var(--lineal-products), url(/images/products/d-latex-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(2) {
+    background: var(--lineal-products), url(/images/products/d-latex-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(3) {
+    background: var(--lineal-products), url(/images/products/d-medical-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(3) {
+    background: var(--lineal-products), url(/images/products/d-medical-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(3) {
+    background: var(--lineal-products), url(/images/products/d-medical-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(3) .products__link {
+    padding: 100px 32px 21px 124px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(4) {
+    background: var(--lineal-products), url(/images/products/d-food-industry-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(4) {
+    background: var(--lineal-products), url(/images/products/d-food-industry-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(4) {
+    background: var(--lineal-products), url(/images/products/d-food-industry-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(4) .products__link {
+    padding: 118px 24px 18px 117px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(5) {
+    background: var(--lineal-products), url(/images/products/d-economic-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(5) {
+    background: var(--lineal-products), url(/images/products/d-economic-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(5) {
+    background: var(--lineal-products), url(/images/products/d-economic-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__item:nth-child(6) {
+    background: var(--lineal-products), url(/images/products/d-construction-gloves@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .products__item:nth-child(6) {
+    background: var(--lineal-products), url(/images/products/d-construction-gloves@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .products__item:nth-child(6) {
+    background: var(--lineal-products), url(/images/products/d-construction-gloves@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
 .about-us {
   padding-bottom: 35px;
 }
-.about-us .h2 {
-  margin-bottom: 20px;
+@media screen and (max-width: 1199px) {
+  .about-us .h2 {
+    margin-bottom: 20px;
+  }
 }
 .about-us__list {
   margin-top: 32px;
@@ -1068,10 +1235,12 @@ body.mouse .dropdown:hover .dropdown__list {
   box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
 }
-.about-us__item:nth-child(3) {
-  padding: 23px 69px 25px 32px;
+@media screen and (max-width: 1199px) {
+  .about-us__item:nth-child(3) {
+    padding: 23px 69px 25px 32px;
+  }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1199px) {
   .about-us__item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -1080,7 +1249,58 @@ body.mouse .dropdown:hover .dropdown__list {
   fill: var(--main-color);
 }
 .about-us__wrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
   border-radius: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-bottom: 60px;
+  }
+  .about-us__inner-content {
+    display: flex;
+  }
+  .about-us .h2 {
+    width: 229px;
+    font-size: 22px;
+    line-height: 1.3636363636;
+    margin-right: 70px;
+  }
+  .about-us__text {
+    width: 681px;
+    font-size: 18px;
+  }
+  .about-us__list {
+    display: flex;
+    flex-flow: wrap;
+    gap: 20px;
+    margin-top: 56px;
+    margin-bottom: 59px;
+  }
+  .about-us__item {
+    width: calc((100% - 60px) / 4);
+    height: 259px;
+    padding: 40px 44px;
+  }
+  .about-us__svg {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 22px;
+  }
+  .about-us__card-text {
+    font-size: 18px;
+    line-height: 1.1666666667;
+  }
+  .about-us__wrapper {
+    display: flex;
+    flex-flow: nowrap;
+    gap: 20px;
+  }
+  .about-us__wrapper picture {
+    width: calc((100% - 40px) / 3);
+  }
 }
 
 .subscribe {
@@ -1088,14 +1308,14 @@ body.mouse .dropdown:hover .dropdown__list {
   padding-bottom: 65px;
   color: var(--white);
   text-align: center;
-  background: var(--lineal-subscrible), url(/images/subscribe/mobile/research-lab-frozen-specimens@1x.jpg);
+  background: var(--lineal-subscrible), url(/images/subscribe/m-research-lab-frozen-specimens@1x.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .subscribe {
-    background: var(--lineal-subscrible), url(/images/subscribe/mobile/research-lab-frozen-specimens@2x.jpg);
+    background: var(--lineal-subscrible), url(/images/subscribe/m-research-lab-frozen-specimens@2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1103,7 +1323,7 @@ body.mouse .dropdown:hover .dropdown__list {
 }
 @media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
   .subscribe {
-    background: var(--lineal-subscrible), url(/images/subscribe/mobile/research-lab-frozen-specimens@3x.jpg);
+    background: var(--lineal-subscrible), url(/images/subscribe/m-research-lab-frozen-specimens@3x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1116,11 +1336,64 @@ body.mouse .dropdown:hover .dropdown__list {
   margin-top: 0;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding-top: 188px;
+    padding-bottom: 162px;
+    background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .subscribe {
+    background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .subscribe {
+    background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 174px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__content-inner {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    margin-bottom: 26px;
+    font-size: 22px;
+    line-height: 1.3636363636;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__text {
+    font-size: 18px;
+    line-height: 1.1666666667;
+    text-align: left;
+  }
+}
 
 .form {
   width: 100%;
-  margin-top: 45px;
-  font-family: "Tahoma";
   font-size: 14px;
   line-height: 1.6428571429;
   color: var(--form-color);
@@ -1129,7 +1402,13 @@ body.mouse .dropdown:hover .dropdown__list {
   -webkit-backdrop-filter: blur(18px);
           backdrop-filter: blur(18px);
 }
+@media screen and (max-width: 1199px) {
+  .form {
+    margin-top: 45px;
+  }
+}
 .form__title {
+  margin-bottom: 28px;
   font-size: 15px;
   line-height: 1.4;
   letter-spacing: 0.06em;
@@ -1144,6 +1423,7 @@ body.mouse .dropdown:hover .dropdown__list {
   width: 100%;
   padding: 5px 0;
   margin-bottom: 28px;
+  font-family: "Tahoma";
   color: var(--form-color);
   background: inherit;
   -webkit-backdrop-filter: blur(18px);
@@ -1175,6 +1455,23 @@ body.mouse .dropdown:hover .dropdown__list {
   font-size: 16px;
   line-height: 1.4375;
   filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    padding: 55px 44px 57px 43px;
+    font-size: 16px;
+    line-height: 1.4375;
+  }
+  .form__title {
+    font-size: 18px;
+    line-height: 1.1666666667;
+  }
+  .form__label {
+    display: block;
+  }
+  .form__button {
+    margin-top: 9px;
+  }
 }
 
 .advantage {

@@ -6,13 +6,15 @@
         margin-bottom: 20px;
     }
 
+    
+
     &__item {
         width: 295px;
         height: 169px;
         border-radius: 5px;
 
         &:nth-child(1) {
-            background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-nitrile-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -22,7 +24,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-nitrile-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -33,7 +35,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/nitrile-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-nitrile-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -41,7 +43,7 @@
         }
 
         &:nth-child(2) {
-            background: var(--lineal-products), url(/images/category/mobile/latex-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-latex-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -51,7 +53,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/latex-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-latex-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -62,7 +64,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/latex-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-latex-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -70,7 +72,7 @@
         }
 
         &:nth-child(3) {
-            background: var(--lineal-products), url(/images/category/mobile/medical-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-medical-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -80,7 +82,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/medical-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-medical-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -91,7 +93,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/medical-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-medical-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -103,7 +105,7 @@
         }
 
         &:nth-child(4) {
-            background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-food-industry-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -113,7 +115,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-food-industry-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -124,7 +126,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/food-industry-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-food-industry-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -136,7 +138,7 @@
         }
 
         &:nth-child(5) {
-            background: var(--lineal-products), url(/images/category/mobile/economic-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-economic-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -146,7 +148,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/economic-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-economic-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -157,7 +159,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/economic-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-economic-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -165,7 +167,7 @@
         }
 
         &:nth-child(6) {
-            background: var(--lineal-products), url(/images/category/mobile/construction-gloves@1x.jpg);
+            background: var(--lineal-products), url(/images/products/m-construction-gloves@1x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -175,7 +177,7 @@
             screen and (-o-mini-device-pixel-ratio: 2/1),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/construction-gloves@2x.jpg);
+                background: var(--lineal-products), url(/images/products/m-construction-gloves@2x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -186,7 +188,7 @@
             screen and (-o-mini-device-pixel-ratio: 3/1),
             screen and (min-resolution: 228dpi),
             screen and (min-resolution: 3dppx) {
-                background: var(--lineal-products), url(/images/category/mobile/construction-gloves@3x.jpg);
+                background: var(--lineal-products), url(/images/products/m-construction-gloves@3x.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -197,7 +199,7 @@
             }
         }
 
-        @media screen and (max-width: 1440px) {
+        @media screen and (max-width: $max-width) {
             &:not(last-child) {
                 margin-bottom: 5px;
             }
@@ -226,6 +228,213 @@
         &:focus .header__svg {
             fill: var(--main-color);
             @include transition($transition-property: fill);
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-top: 87px;
+        padding-bottom: 103px;
+
+        & .h2 {
+            margin-bottom: 35px;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+
+        &__list {
+            display: flex;
+            flex-flow: wrap;
+            gap: 10px;
+        }
+
+        &__item {
+            width: calc((100% - 20px)/3);
+            // width: 295px;
+            // height: 169px;
+
+            &:nth-child(1) {
+                background: var(--lineal-products), url(/images/products/d-nitrile-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-nitrile-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-nitrile-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:nth-child(2) {
+                background: var(--lineal-products), url(/images/products/d-latex-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-latex-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-latex-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:nth-child(3) {
+                background: var(--lineal-products), url(/images/products/d-medical-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-medical-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-medical-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                & .products__link {
+                    padding: 100px 32px 21px 124px;
+                }
+            }
+
+            &:nth-child(4) {
+                background: var(--lineal-products), url(/images/products/d-food-industry-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-food-industry-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-food-industry-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                & .products__link {
+                    padding: 118px 24px 18px 117px;
+                }
+            }
+
+            &:nth-child(5) {
+                background: var(--lineal-products), url(/images/products/d-economic-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-economic-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-economic-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:nth-child(6) {
+                background: var(--lineal-products), url(/images/products/d-construction-gloves@1x.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (-webkit-min-device-pixel-ratio: 2),
+                screen and (-o-mini-device-pixel-ratio: 2/1),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background: var(--lineal-products), url(/images/products/d-construction-gloves@2x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+
+                @media screen and (min-device-pixel-ratio: 3),
+                screen and (-webkit-min-device-pixel-ratio: 3),
+                screen and (-o-mini-device-pixel-ratio: 3/1),
+                screen and (min-resolution: 228dpi),
+                screen and (min-resolution: 3dppx) {
+                    background: var(--lineal-products), url(/images/products/d-construction-gloves@3x.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
         }
     }
 }
