@@ -1,11 +1,82 @@
 .lang {
-    display: flex;
-    gap: 16px;
+    @media screen and (max-width: $max-width) {
+        display: none;
+    }
+    position: relative;
+    margin-right: 22px;
+    cursor: pointer;
 
-    color: var(--black);
-    text-transform: uppercase;
+    &:hover .lang-dropdown__hidden {
+        opacity: 1;
+        visibility: visible;
+        @include transition($transition-property: (opasiti, visible));
+    }
 
-    &__link {
-        color: inherit;
+    &:hover .lang-dropdown__selected {
+        border-color: var(--accent);
+        background-color: #fff;
+        @include transition($transition-property: (border-color, background));
+    }
+
+    &:hover .lang-dropdown__item {
+        font-weight: 700;
+        // font-size: 17px;
+        color: var(--main-color);
+        background: var(--white);
+        @include transition($transition-property: (color, background));
+    }
+
+    &:hover .lang-dropdown__arrow {
+        fill: var(--accent);
+        transform: scale(-1);
+        @include transition($transition-property: scale);
+    }
+
+
+    &-dropdown {
+
+        &__selected {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            cursor: default;
+            @include transition($transition-property: (border-color, background-color));
+        }
+
+        &__item {
+            color: inherit;
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11);
+        }
+
+        &__arrow {
+            width: 7px;
+            height: 7px;
+            fill: var(--white);
+            transform-origin: 50% 50%;
+            @include transition($transition-property: fill);
+            @include transition($transition-property: transform);
+        }
+
+        &__hidden {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            visibility: hidden;
+            z-index: 1;
+            background: var(--white);
+            // border-bottom: 1px solid var(--accent);
+            // border-right: 1px solid var(--accent);
+            // border-left: 1px solid var(--accent);
+            opacity: 0;
+            @include transition($transition-property: (opacity,visibility));
+        }
     }
 }

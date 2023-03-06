@@ -20,6 +20,11 @@
         background: var(--white);
         box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
+        @include transition($transition-property: box-shadow);
+        &:hover,
+        &:focus {
+            box-shadow: -3px -3px 49px rgba(10, 1, 1, 0.04), 3px 10px 36px rgba(0, 0, 0, 0.1);
+        }
 
         @media screen and (max-width: $max-width) {
             &:nth-child(3) {

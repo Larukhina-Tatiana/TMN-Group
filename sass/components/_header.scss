@@ -1,8 +1,4 @@
 .header {
-
-    justify-content: space-between;
-    align-items: center;
-
     color: var(--white);
 
     background: var(--lineal-hero), url(/images/hero/m-hero@1x.jpg);
@@ -10,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
-    padding: 25px 2px 0 2px;
+    padding: 25px 2px 25px 2px;
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
@@ -37,7 +33,7 @@
     &__nav {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
     }
 
@@ -47,20 +43,31 @@
     }
 
     &__svg {
+        display: inline-block;
+        vertical-align: middle;
         width: 16px;
         height: 16px;
+        margin-right: 8px;
         fill: var(--white);
+        @include transition($transition-property: fill);
+
+        @media screen and (max-width: $max-width) {
+            display: none;
+        }
     }
 
 
     @media screen and (min-width: $desctop) {
-        padding: 52px 0 197px 0;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        padding: 46px 0 197px 0;
         background: var(--lineal-hero), url(/images/hero/d-hero@1x.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 5px;
-        padding: 25px 2px 0 2px;
+        // padding: 25px 0px 40px;
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
@@ -93,8 +100,10 @@
                 height: 34px;
             }
         }
+
         &__nav {
-                margin-bottom: 20px;
+            margin-top: 3px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -109,8 +118,6 @@
         background: var(--main-color);
         border-radius: 5px;
         box-shadow: inset -4px -4px 13px rgba(0, 0, 0, 0.07), inset 4px 4px 11px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(2px);
-        --webkit-backdrop-filter: blur(2px);
 
         &__list {
             display: flex;
@@ -127,10 +134,12 @@
 
         &__link {
             padding: 9px 75px 10px;
+            font-size: 16px;
 
             &:hover,
             &:focus {
                 color: var(--accent);
+                // backdrop-filter: blur(2px);
                 @include transition($transition-property: color);
             }
         }

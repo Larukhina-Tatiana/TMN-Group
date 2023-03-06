@@ -1,0 +1,11 @@
+.our-blog {
+    padding-top: 19px;
+    background: var(--white);
+
+    &__item {
+        width: 100%;
+        box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+
+    }
+}

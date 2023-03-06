@@ -1,4 +1,6 @@
 .logo {
+    width: 31px;
+    height: 25px;
 
     &::before {
         content: url(/images/logo/295/Logo-mobile.png);
@@ -8,7 +10,7 @@
         screen and (-o-mini-device-pixel-ratio: 2/1),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            content: url(/images/logo/logo-mobile@2x.png);
+            content: url(/images/logo/logo-mobile@2x.png)
         }
 
         @media screen and (min-device-pixel-ratio: 3),
@@ -22,6 +24,8 @@
 
     @media screen and (min-width: $desctop) {
         margin-right: 322px;
+        width: 156px;
+        height: 31px;
 
         &::before {
             content: url(/images/logo/logo@1x.png);

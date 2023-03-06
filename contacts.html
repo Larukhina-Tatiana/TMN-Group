@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти тмн - груп</title>
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <a class="logo" href="./index.html"></a>
+
+                <div class="lang">
+                    <div class="lang-dropdown">
+                        <div class="lang-dropdown__selected">
+                            <div class="lang-dropdown__item">UA</div>
+
+                            <svg class="lang-dropdown__arrow" width="12" height="10">
+                                <use href="/images/icons/mobile/icons.svg#icon-arrow-down"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="lang-dropdown__hidden">
+                        <a href="" rel="alternate" class="lang-dropdown__item">
+                            RU
+                        </a>
+                        <a href="" rel="alternate" class="lang-dropdown__item">
+                            EN
+                        </a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown__link dropdown__link-container" href="tel:+380675703489">
+                        <svg class="header__svg" width="18" aria-label="Іконка телефона">
+                            <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                        </svg>
+                        (067)&nbsp;570&nbsp;-&nbsp;34&nbsp;-&nbsp;89
+                        <svg class="dropdown__arrow arrow" width="16" aria-label="Перемикач випадаючого меню">
+                            <use href="./images/icons/mobile/icons.svg#icon-arrow-down">
+                            </use>
+                        </svg>
+                    </a>
+
+                    <ul class="dropdown__list">
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(050)&nbsp;345-67-89</a>
+                        </li>
+                        <li>
+                            <a class="dropdown__link" href="tel:+380444266444">(063)&nbsp;570-34-89</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+
+
+                <!-- <div class="search-inner">
+                    <form class="form1 f-search js-init _module-loaded" method="get" action="https://" data-form-search="{&quot;minLength&quot;:3,&quot;delay&quot;:350}" novalidate="novalidate">
+                        <div class="form-group" bis_skin_checked="1">
+                            <input class="form-group__input f-search__input" type="search" name="search" placeholder="Пошук" value="" autocomplete="off" data-rule-minlength="3" data-search-input="" required="required">
+                                        <div class="f-search-suggest" data-search-suggest="" bis_skin_checked="1"></div>
+                                </div>
+                        <button type="submit" class="button1 f-search__button">
+                            <svg width="17" height="16">
+                                <use href="./images/icons/mobile/icons.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                        </form>
+                </div> -->
+
+
+                <a class="header__basket" href="">
+                    <svg class="header__svg header__svg--width" aria-label="Іконка кошика">
+                        <use href="./images/icons/mobile/icons.svg#icon-basket_icon"></use>
+                    </svg>
+                </a>
+
+                
+                <nav class="header-menu">
+                    <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+                            <use class="menu__toggle-icon-menu" href="./images/icons/mobile/icons.svg#icon-burger-menu">
+                            </use>
+                        </svg>
+                    </button>
+
+                </nav>
+
+                <!-- <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+                            <use class="menu__toggle-icon-menu" href="./images/icons/mobile/icons.svg#icon-burger-menu">
+                            </use>
+                        </svg>
+                    </button> -->
+                
+
+
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu__toggle js-close-menu">
+                        <svg width="24" height="24" aria-label="Перемикач мобільного меню">
+                            <use class="menu__toggle-icon-cross" href="./images/icons/mobile/icons.svg#icon-close_menu">
+                            </use>
+                        </svg>
+                    </button>
+
+
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <div class="menu-link-inner">
+                                <a class="menu__link menu__link--accent" href="">наша продукція</a>
+
+
+                                <button class="menu-btn" aria-expanded="false" data-menu-button
+                                    aria-controls="menu-products">
+                                    <svg width="12" height="12" aria-label="Перемикач мобільного меню">
+                                        <use class="icon-menu" href="./images/icons/mobile/icons.svg#icon-arrow-down">
+                                        </use>
+                                        <use class="icon-cross" href="./images/icons/mobile/icons.svg#icon-arrow-up">
+                                        </use>
+                                    </svg>
+                                </button>
+
+                                <!-- <div class="menu-products data-menu" id="menu-products">
+
+                                    <ul class="menu_products">
+                                        <li class="menu__item">
+                                            <div>
+                                                <a class="menu__link menu__link--accent" href="">наша продукція</a>
+                                            </div>
+
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">рукавички нітрилові</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">рукавиці латексні</a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">харчова промисловість</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">рукавички медичні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">рукавички хірургічні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">хімічна промисловість і
+                                                фармацевтика</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="">оглядові рукавички</a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">стоматологічні</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">для клінігових робіт</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">сад / город</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">ремонт і будівництво</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">для салонів краси</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a class="menu__link menu__link--accent" href="#">господарські рукавички</a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+
+                            </div>
+
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="">про компанію</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="./blog.html">блог</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="./contacts.html">контакти</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="#">Пошук</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--accent" href="#">мова</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="header-menu">
+                <ul class="header-menu__list">
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">наша продукція</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="">про компанію</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="./blog.html">блог</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a class="menu__link header-menu__link" href="./contacts.html">контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contacts">
+            <div class="container">
+                <h1 class="contacts__title">Контакти</h1>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <h2 class="contacts__subtitle">Київ</h2>
+                        <address>
+                            <ul class="contact__address-list">
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка телефона">
+                                        <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                                    </svg>
+
+                                    <a class="contacts__address-link" href="tel:+380444266444">(044)426-64-44</a>
+                                    <a class="contacts__address-link" href="tel:+380675703489">(067)570-34-89</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка геолокації">
+                                        <use href="./images/icons/mobile/icons.svg#icon-noun-location"></use>
+                                    </svg>
+                                    <a class="contacts__address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                                        target="_blank" rel="noopener noreferrer nofollow">пр-т. Героїв України, 21 офіс
+                                        422, 04655</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка пошти">
+                                        <use href="./images/icons/mobile/icons.svg#icon-email"></use>
+                                    </svg>
+                                    <a class="contacts__address-link"
+                                        href="mailto:info@devstudio.com">office@tmngroup.com.ua</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </li>
+                    <li class="contacts__item">
+                        <h2 class="contacts__subtitle">Харків</h2>
+                        <address>
+                            <ul class="contact__address-list">
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка телефона">
+                                        <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                                    </svg>
+
+                                    <a class="contacts__address-link" href="tel:+380675404090">(067)540-40-90</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка геолокації">
+                                        <use href="./images/icons/mobile/icons.svg#icon-noun-location"></use>
+                                    </svg>
+                                    <a class="contacts__address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                                        target="_blank" rel="noopener noreferrer nofollow">вул. Малопанасівська 4/7,
+                                        офіс 310</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка пошти">
+                                        <use href="./images/icons/mobile/icons.svg#icon-email"></use>
+                                    </svg>
+                                    <a class="contacts__address-link"
+                                        href="mailto:info@devstudio.com">office@tmngroup.com.ua</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </li>
+                    <li class="contacts__item">
+                        <h2 class="contacts__subtitle">Дніпро</h2>
+                        <address>
+                            <ul class="contact__address-list">
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка телефона">
+                                        <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                                    </svg>
+
+                                    <a class="contacts__address-link" href="tel:+380676921275">(067)692-12-75</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка геолокації">
+                                        <use href="./images/icons/mobile/icons.svg#icon-noun-location"></use>
+                                    </svg>
+                                    <a class="contacts__address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                                        target="_blank" rel="noopener noreferrer nofollow"> вул. Стрітенська, 78, (ТЦ
+                                        Юність)</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка пошти">
+                                        <use href="./images/icons/mobile/icons.svg#icon-email"></use>
+                                    </svg>
+                                    <a class="contacts__address-link"
+                                        href="mailto:info@devstudio.com">office@tmngroup.com.ua</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </li>
+                    <li class="contacts__item">
+                        <h2 class="contacts__subtitle">Львів</h2>
+                        <address>
+                            <ul class="contact__address-list">
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка телефона">
+                                        <use href="./images/icons/mobile/icons.svg#icon-phone"></use>
+                                    </svg>
+                                    <a class="contacts__address-link" href="tel:+380322331020">(032)233-10-20</a>
+                                    <a class="contacts__address-link" href="tel:+380673136407">(067)313-64-07</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка геолокації">
+                                        <use href="./images/icons/mobile/icons.svg#icon-noun-location"></use>
+                                    </svg>
+                                    <a class="contacts__address-link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                                        target="_blank" rel="noopener noreferrer nofollow"> вул. Шевченко, 31, офіс
+                                        211</a>
+                                </li>
+                                <li class="contacts__address-item">
+                                    <svg class="contacts__svg" width="18" aria-label="Іконка пошти">
+                                        <use href="./images/icons/mobile/icons.svg#icon-email"></use>
+                                    </svg>
+                                    <a class="contacts__address-link"
+                                        href="mailto:info@devstudio.com">office@tmngroup.com.ua</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__wrap">
+                    <a class="logo footer__logo" href="./index.html"></a>
+                    <p class="footer__copyright footer__copyright--desctop">Copyright&#169; 2023. TNM - Group</p>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="">наша продукція</a></li>
+                    <li class="footer__item"><a class="footer__link" href="">про компанію</a></li>
+                    <li class="footer__item"><a class="footer__link" href="./blog.html">блог</a></li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="./contacts.html">контакти</a>
+                    </li>
+                </ul>
+                <address>
+                    <ul class="footer__address">
+                        <li class="footer__phone_list">
+                            <div class="footer__phone-inner">
+                                <p class="footer__phone-title">телефон:</p>
+                            </div>
+                            <ul class="footer__phone-inner-num">
+                                <li>
+                                    <a class="footer__link footer__link--address"
+                                        href="tel:+380444266444">(044)&nbsp;426-64-44</a>
+                                </li>
+                                <li>
+                                    <a class="footer__link footer__link--address"
+                                        href="tel:+380675703489">(067)&nbsp;570-34-89</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <p class="footer__mail-title">E-mail:</p>
+                            <a class="footer__link footer__link--address" href="mailto:office@tmngroup.com.ua">
+                                office@tmngroup.com.ua
+                            </a>
+                        </li>
+
+                    </ul>
+                </address>
+                <p class="footer__copyright footer__copyright--min-width-none">Copyright &#169; 2023. TNM - Group</p>
+
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/mobile-menu-products.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/script.js"></script>
+
+</body>
+
+</html>

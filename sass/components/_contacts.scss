@@ -1,0 +1,112 @@
+.contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--white);
+    // background: var(--lineal-footer);
+    // background: linear-gradient(232.83deg, #84B6F5 -13.52%, #487ACD 76.05%);
+
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: var(--main-color);
+    }
+
+    &__list {
+        margin-top: 30px;
+        color: var(--text);
+    }
+
+    &__item {
+        height: 228px;
+
+        @media screen and (max-width: $max-width) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        padding: 30px 27px 30px 24px;
+        background: var(--white);
+        border-radius: 5px;
+        box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.06);
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+            box-shadow: -3px -3px 49px rgba(10, 1, 1, 0.04), 3px 10px 36px rgba(0, 0, 0, 0.1);
+            @include transition($transition-property: transform);
+            @include transition($transition-property: box-shadow);
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: calc(28/20);
+        text-transform: uppercase;
+        color: var(--main-color);
+    }
+
+    &__address-item {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    &__svg {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        fill: var(--main-color);
+    }
+
+
+    &__address-link {
+        display: block;
+        font-size: 14px;
+        color: var(--text);
+        margin-left: 25px;
+        margin-bottom: 15px;
+
+        &:hover,
+        &:focus {
+            color: var(--accent);
+            @include transition($transition-property: color);
+        }
+    }
+
+    @media screen and (min-width: $desctop) {
+        padding-bottom: 81px;
+
+
+        &__title {
+            font-size: 40px;
+        }
+
+        &__list {
+            display: flex;
+            flex-flow: nowrap;
+            gap: 10px;
+        }
+
+        &__item {
+            width: calc((100% - 30px)/4);
+            height: 262px;
+            padding: 30px 20px;
+        }
+
+
+        &__svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__address-link {
+            font-size: 16px;
+        }
+    }
+}
