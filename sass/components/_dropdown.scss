@@ -21,6 +21,10 @@
         color: var(--accent);
     }
 
+    &:hover .dropdown__link {
+        color: var(--accent);
+    }
+
 
 
     &:hover &__arrow {
@@ -30,6 +34,9 @@
 
 
     &__link {
+        display: flex;
+            align-items: center;
+            gap: 13px;
         font-weight: 700;
         font-variant: all-small-caps;
         color: var(--text);
@@ -49,8 +56,8 @@
 
     &__arrow {
         display: inline-block;
-        width: 7px;
-        height: 7px;
+        width: 8px;
+        height: 9px;
         // content: '\25BC';
         font-size: 50%;
         cursor: pointer;
@@ -82,10 +89,6 @@
             box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.14);
             filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
         }
-
-        &:hover .dropdown__link {
-            color: var(--accent);
-        }
     }
 
     & li:not(:last-child) {
@@ -95,13 +98,14 @@
 
     @media screen and (min-width: $desctop) {
         &__link {
-            font-weight: 400;
+                        font-weight: 400;
             font-size: 16px;
+
         }
 
         &__arrow {
-            width: 7px;
-            height: 7px;
+            width: 8px;
+            height: 9px;
         }
 
         &__list {

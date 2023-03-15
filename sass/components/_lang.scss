@@ -19,7 +19,7 @@
     }
 
     &:hover .lang-dropdown__item {
-        font-weight: 700;
+
         // font-size: 17px;
         color: var(--main-color);
         background: var(--white);
@@ -27,7 +27,7 @@
     }
 
     &:hover .lang-dropdown__arrow {
-        fill: var(--accent);
+        color: var(--accent);
         transform: scale(-1);
         @include transition($transition-property: scale);
     }
@@ -49,7 +49,7 @@
         &__item {
             color: inherit;
             display: block;
-            font-weight: 400;
+            font-weight: 700;
             font-size: 16px;
             text-transform: uppercase;
             text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.11);
@@ -58,10 +58,10 @@
         &__arrow {
             width: 7px;
             height: 7px;
-            fill: var(--white);
+            // fill: var(--white);
             transform-origin: 50% 50%;
-            @include transition($transition-property: fill);
-            @include transition($transition-property: transform);
+            @include transition($transition-property: (transform,fill));
+
         }
 
         &__hidden {

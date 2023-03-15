@@ -1,5 +1,10 @@
 .search {
+    @media  (width < 1200px) {
+        display: none;
+    }
+
     position: relative;
+
     &--margin {
         margin-left: 29px;
         margin-right: 8px;
@@ -15,7 +20,7 @@
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;
-        
+
         top: calc(50% - 8px);
         left: 13px;
     }
@@ -34,6 +39,7 @@
         &:focus {
             outline: none;
         }
+
         &::placeholder {
             color: var(--grey);
         }
