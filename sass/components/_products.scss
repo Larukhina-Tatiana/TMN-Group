@@ -232,7 +232,7 @@
 
     @media screen and (min-width: $desctop) {
         padding-top: 87px;
-        padding-bottom: 103px;
+        padding-bottom: 102px;
 
         &__h2 {
             margin-bottom: 35px;
@@ -278,6 +278,9 @@
                     background-position: center;
                     background-repeat: no-repeat;
                 }
+                & .products__link {
+                    padding: 118px 24px 18px 166px;
+                }
             }
 
             &:nth-child(2) {
@@ -306,6 +309,10 @@
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
+                }
+
+                & .products__link {
+                    padding: 118px 24px 18px 166px;
                 }
             }
 
@@ -338,7 +345,7 @@
                 }
 
                 & .products__link {
-                    padding: 100px 32px 21px 124px;
+                    padding: 99px 0 21px 138px;
                 }
             }
 
@@ -371,7 +378,7 @@
                 }
 
                 & .products__link {
-                    padding: 118px 24px 18px 117px;
+                    padding: 116px 24px 18px 126px;
                 }
             }
 
@@ -402,6 +409,9 @@
                     background-position: center;
                     background-repeat: no-repeat;
                 }
+                & .products__link {
+                    padding: 116px 24px 18px 166px;
+                }
             }
 
             &:nth-child(6) {
@@ -430,6 +440,9 @@
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;
+                }
+                & .products__link {
+                    padding: 116px 24px 18px 148px;
                 }
             }
         }

@@ -3,6 +3,7 @@
     &__h2 {
         line-height: calc(21/18);
         text-transform: uppercase;
+        padding-left: 10px;
     }
 
     &__list {
@@ -50,7 +51,7 @@
     @media screen and (min-width: $desctop) {
         padding: 97px 0 90px;
 
-        & .h2 {
+        &__h2 {
             font-size: 22px;
             line-height: calc(17/22);
         }
@@ -67,7 +68,7 @@
             width: calc((100% - 60px)/3);
             height: 290px;
             // padding: 18px 8px 22px 12px;
-            justify-content: space-evenly;
+            justify-content: center;
 
             &-wrapper {
                 display: inline-flex;
@@ -88,7 +89,7 @@
 
         &__text {
             // лажа 
-            width: 224px;
+            width: 100%; 
             font-size: 18px;
             line-height: calc(21/18);
             text-align: center;

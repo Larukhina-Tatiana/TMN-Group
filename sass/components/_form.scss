@@ -69,21 +69,26 @@
     }
 
     @media screen and (min-width: $desctop) {
-        padding: 55px 44px 57px 43px;
+        padding: 88px 44px 57px 67px;
         font-size: 16px;
         line-height: calc(23/16);
 
         &__title {
             font-size: 18px;
             line-height: calc(21/18);
+            margin-bottom: 24px;
         }
 
         &__label {
             display: block;
         }
-
-        &__button {
-            margin-top: 9px;
+        &__input {
+            margin-bottom: 25px;
+            &#email {
+                margin-bottom: 40px;
+            }
         }
+
+        
     }
 }

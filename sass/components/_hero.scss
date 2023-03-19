@@ -15,7 +15,7 @@
         font-weight: 700;
     }
 
-    & &__button {
+    &__button {
         width: 256px;
         height: 35px;
         padding: 7px 46px 6px;
@@ -33,7 +33,15 @@
     @media screen and (min-width: $desctop) {
 
         padding-top: 77px;
-        padding-bottom: 197px;
+        padding-bottom: 192px;
+
+        &__title {
+            margin-top: 12px;
+        }
+        &__text {
+            margin-top: 7px;
+            margin-bottom: 17px;
+        }
 
         &__inner {
             display: flex;
@@ -58,7 +66,7 @@
             line-height: calc(21/18);
         }
 
-        & &__button {
+        &__button {
             // width: 256px;
             height: 45px;
             padding: 11px 35px;

@@ -11,7 +11,7 @@
         margin-bottom: 11px;
     }
 
-    &__tumb {
+    &__thumb {
         position: relative;
         overflow: hidden;
         width: 100%;
@@ -40,6 +40,7 @@
     }
 
     &__name-title {
+        margin-top: 10px;
         font-size: 16px;
         text-transform: uppercase;
         text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.08);
@@ -72,7 +73,7 @@
     }
 
     @media screen and (min-width: $desctop) {
-        padding: 67px 44px 64px 47px;
+        padding: 67px 44px 64px 42px;
         width: 551px;
 
         &__inner {
@@ -86,13 +87,18 @@
 
         &__text {
             margin-bottom: 16px;
+            font-size: 16px;
+            line-height: calc(21/16);
         }
 
-        &__tumb {
+        &__thumb {
+            position: relative;
+            width: 199px;
             height: 109px;
         }
 
         &__img {
+            position: absolute;
             width: 100%;
             height: 109px;
             padding: 18px 8px;

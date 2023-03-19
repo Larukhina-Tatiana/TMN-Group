@@ -32,12 +32,14 @@
     
     &__inner {
         margin-top: 28px;
+        @media screen and (max-width: $max-width) {
         display: -webkit-inline-box;
+        }
         gap: 24px;
     }
 
     &__post-card {
-        width: 230px;
+        // width: 230px;
     }
     &__inner-img {
         position: relative;
@@ -79,11 +81,13 @@
             display: flex;
             flex-flow: nowrap;
             justify-content: space-evenly;
-            gap: 22px;
+            // gap: 22px;
         }
     
         &__post-card {
-        overflow: hidden;
+        // overflow: hidden;
+        // flex-basis: calc((100% - 63px)/4);
+        width: 25%;
         }
         
         &__post-title {
