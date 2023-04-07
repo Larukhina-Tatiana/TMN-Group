@@ -1,7 +1,7 @@
 .header {
     color: var(--white);
 
-    background: var(--lineal-hero), url(/images/hero/m-hero@1x.jpg);
+    background: var(--lineal-hero), url(../images/hero/m-hero@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
     screen and (-o-mini-device-pixel-ratio: 2/1),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background: var(--lineal-hero), url(/images/hero/m-hero@2x.jpg);
+        background: var(--lineal-hero), url(../images/hero/m-hero@2x.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -107,7 +107,7 @@
         screen and (-o-mini-device-pixel-ratio: 3/1),
         screen and (min-resolution: 228dpi),
         screen and (min-resolution: 3dppx) {
-            background: var(--lineal-hero), url(/images/hero/d-hero@3x.jpg);
+            background: var(--lineal-hero), url(../images/hero/d-hero@3x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -168,19 +168,3 @@
 
     }
 }
-
-
-// стрелка вниз в меню виситна спане классом
-// на сайте электроенергии
-// <a class="dropdown-toggle" href="/" data-toggle="dropdown" aria-expanded="true">Постачання електричної енергії <span class="caret"></span></a>
-//     .ttt {
-//     display: inline-block;
-//     width: 0;
-//     height: 0;
-//     margin-left: 2px;
-//     vertical-align: middle;
-//     border-top: 4px dashed;
-//     border-top: 4px solid \9;
-//     border-right: 4px solid transparent;
-//     border-left: 4px solid transparent;
-// }
