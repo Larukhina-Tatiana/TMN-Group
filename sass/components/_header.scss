@@ -79,7 +79,7 @@
     }
 
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1200px) {
         // display: flex;
         // justify-content: space-between;
         // align-items: center;
@@ -135,7 +135,7 @@
         display: none;
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1200px) {
         // display: flex;
         background: var(--main-color);
         border-radius: 5px;
