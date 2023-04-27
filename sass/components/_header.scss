@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
     border-radius: 5px;
     padding-top: 25px;
     // padding-bottom: 45px;
@@ -34,7 +35,7 @@
     &__nav {
         position: relative;
         display: flex;
-        // justify-content: space-between;
+        justify-content: space-between;
         align-items: center;
     }
 

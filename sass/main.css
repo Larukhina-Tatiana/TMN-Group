@@ -315,6 +315,7 @@ body.mouse .dropdown:hover .dropdown__list {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
   border-radius: 5px;
   padding-top: 25px;
 }
@@ -337,6 +338,7 @@ body.mouse .dropdown:hover .dropdown__list {
 .header__nav {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .header__logo {
