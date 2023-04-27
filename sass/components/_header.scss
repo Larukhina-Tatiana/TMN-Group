@@ -25,7 +25,7 @@
     screen and (-o-mini-device-pixel-ratio: 3/1),
     screen and (min-resolution: 228dpi),
     screen and (min-resolution: 3dppx) {
-        background: var(--lineal-hero), url(/images/hero/m-hero@3x.jpg);
+        background: var(--lineal-hero), url(../images/hero/m-hero@3x.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -84,7 +84,7 @@
         // justify-content: space-between;
         // align-items: center;
         padding-top: 46px;
-        background: var(--lineal-hero), url(/images/hero/d-hero@1x.jpg);
+        background: var(--lineal-hero), url(../images/hero/d-hero@1x.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -96,7 +96,7 @@
         screen and (-o-mini-device-pixel-ratio: 2/1),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background: var(--lineal-hero), url(/images/hero/d-hero@2x.jpg);
+            background: var(--lineal-hero), url(../images/hero/d-hero@2x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

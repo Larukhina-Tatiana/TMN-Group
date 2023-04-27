@@ -43,7 +43,7 @@
     @media screen and (min-width: $desctop) {
         padding-top: 155px;
         padding-bottom: 160px;
-        background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@1x.jpg);
+        background: var(--lineal-subscrible), url(../images/subscribe/d-research-lab-frozen-specimens@1x.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -53,7 +53,7 @@
         screen and (-o-mini-device-pixel-ratio: 2/1),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@2x.jpg);
+            background: var(--lineal-subscrible), url(../images/subscribe/d-research-lab-frozen-specimens@2x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -64,7 +64,7 @@
         screen and (-o-mini-device-pixel-ratio: 3/1),
         screen and (min-resolution: 228dpi),
         screen and (min-resolution: 3dppx) {
-            background: var(--lineal-subscrible), url(/images/subscribe/d-research-lab-frozen-specimens@3x.jpg);
+            background: var(--lineal-subscrible), url(../images/subscribe/d-research-lab-frozen-specimens@3x.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
