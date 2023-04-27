@@ -114,19 +114,19 @@
             }
 
             &:nth-child(1)::before {
-                content: url(/images/icons/about-us/certificate.svg);
+                content: url(../images/icons/about-us/certificate.svg);
             }
 
             &:nth-child(2)::before {
-                content: url(/images/icons/about-us/quality.svg);
+                content: url(../images/icons/about-us/quality.svg);
             }
 
             &:nth-child(3)::before {
-                content: url(/images/icons/about-us/noun-order.svg);
+                content: url(../images/icons/about-us/noun-order.svg);
             }
 
             &:nth-child(4)::before {
-                content: url(/images/icons/about-us/partnership.svg);
+                content: url(../images/icons/about-us/partnership.svg);
             }
         }
 
