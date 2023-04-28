@@ -196,15 +196,11 @@ p {
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
 }
 
 img {
   display: block;
-}
-
-img {
   max-width: 100%;
   height: auto;
   width: 100%;
@@ -236,6 +232,14 @@ button {
   cursor: pointer;
 }
 
+body {
+  font-family: "Circe", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* Скрытие заголовка */
 .visually-hidden {
   position: absolute;
@@ -251,14 +255,11 @@ button {
   margin: -1px;
 }
 
-.no-padding-top {
-  padding-top: 0;
-}
-
 .container {
-  max-width: 1250px;
+  max-width: 1009px;
   padding: 0 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 body {
@@ -310,30 +311,12 @@ body.mouse .dropdown:hover .dropdown__list {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header {
-  color: var(--white);
-  background: var(--lineal-hero), url(../images/hero/m-hero@1x.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  border-radius: 5px;
   padding-top: 25px;
-}
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .header {
-    background: var(--lineal-hero), url(../images/hero/m-hero@2x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
-  .header {
-    background: var(--lineal-hero), url(../images/hero/m-hero@3x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  color: var(--white);
+  position: absolute;
+  left: 0;
+  right: 0;
+  outline: 1px solid green;
 }
 .header__nav {
   position: relative;
@@ -348,7 +331,7 @@ body.mouse .dropdown:hover .dropdown__list {
   display: inline-flex;
   filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
 }
-@media (width < 1200px) {
+@media (width < 768px) {
   .header__basket--margin {
     margin-left: 14px;
     margin-right: 8px;
@@ -379,32 +362,6 @@ body.mouse .dropdown:hover .dropdown__list {
   height: 32px;
 }
 @media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 46px;
-    background: var(--lineal-hero), url(../images/hero/d-hero@1x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .header {
-    background: var(--lineal-hero), url(../images/hero/d-hero@2x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
-  .header {
-    background: var(--lineal-hero), url(../images/hero/d-hero@3x.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (min-width: 1200px) {
   .header__svg {
     width: 24px;
     height: 24px;
@@ -413,52 +370,39 @@ body.mouse .dropdown:hover .dropdown__list {
     width: 34px;
     height: 34px;
   }
-}
-@media screen and (min-width: 1200px) {
   .header__nav {
     margin-top: 3px;
     margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .header-menu {
-    display: none;
-  }
+.header-menu {
+  display: flex;
+  background: var(--main-color);
+  border-radius: 5px;
+  box-shadow: inset -4px -4px 13px rgba(0, 0, 0, 0.07), inset 4px 4px 11px rgba(0, 0, 0, 0.1);
 }
-@media screen and (min-width: 1200px) {
-  .header-menu {
-    background: var(--main-color);
-    border-radius: 5px;
-    box-shadow: inset -4px -4px 13px rgba(0, 0, 0, 0.07), inset 4px 4px 11px rgba(0, 0, 0, 0.1);
-  }
-  .header-menu__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header-menu__item:not(:first-child)::before {
-    content: "";
-    border-right: 1px solid var(--white);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-  }
-  .header-menu__link {
-    padding: 9px 75px 10px;
-    font-size: 16px;
-  }
-  .header-menu__link:hover, .header-menu__link:focus {
-    color: var(--accent);
-    transition-duration: 450ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.header-menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header-menu__item:not(:first-child)::before {
+  content: "";
+  border-right: 1px solid var(--white);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header-menu__link {
+  padding: 9px 75px 10px;
+  font-size: 16px;
+}
+.header-menu__link:hover, .header-menu__link:focus {
+  color: var(--accent);
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .search {
   position: relative;
-}
-@media (width < 1200px) {
-  .search {
-    display: none;
-  }
 }
 .search--margin {
   margin-left: 29px;
@@ -470,7 +414,7 @@ body.mouse .dropdown:hover .dropdown__list {
   width: 16px;
   height: 16px;
   padding: 0;
-  background-image: url(/images/icons/search.svg);
+  background-image: url(../images/icons/search.svg);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -505,6 +449,36 @@ body.mouse .dropdown:hover .dropdown__list {
   margin-right: auto;
   text-align: center;
   padding-top: 35px;
+  color: var(--white);
+  background: var(--lineal-hero), url(../images/hero/m-hero@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 5px;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-mini-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background: var(--lineal-hero), url(../images/hero/m-hero@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 3), screen and (-o-mini-device-pixel-ratio: 3/1), screen and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-resolution: 228dpi), screen and (min-resolution: 3dppx) {
+  .hero {
+    background: var(--lineal-hero), url(../images/hero/m-hero@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.hero__inner {
+  margin-top: 41px;
+}
+.hero__content {
+  padding: 0 7px;
+  margin: 0 auto;
 }
 .hero__title {
   font-size: 50px;
@@ -565,6 +539,51 @@ body.mouse .dropdown:hover .dropdown__list {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 228px;
+    padding-bottom: 197px;
+    background: var(--lineal-hero), url(../images/hero/d-hero@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 2/1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background: var(--lineal-hero), url(../images/hero/d-hero@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (-o-mini-device-pixel-ratio: 3/1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.375), screen and (min-width: 1200px) and (min-resolution: 228dpi), screen and (min-width: 1200px) and (min-resolution: 3dppx) {
+  .hero {
+    background: var(--lineal-hero), url(../images/hero/d-hero@3x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.logo__img-mobile {
+  width: 31px;
+  height: 25px;
+}
+@media screen and (width > 768px) {
+  .logo__img-mobile {
+    display: none;
+  }
+}
+.logo__img-desctop {
+  display: none;
+}
+@media screen and (width > 768px) {
+  .logo__img-desctop {
+    display: block;
+  }
+}
 
 .menu-container {
   display: none;
@@ -587,6 +606,7 @@ body.mouse .dropdown:hover .dropdown__list {
   margin-bottom: 10px;
 }
 .menu__toggle {
+  outline: 1px solid blue;
   display: flex;
   height: 34px;
   width: 34px;
@@ -598,7 +618,6 @@ body.mouse .dropdown:hover .dropdown__list {
   background: inherit;
   cursor: pointer;
   border: none;
-  outline: none;
 }
 .menu__toggle:hover .menu__toggle-icon-cross, .menu__toggle:focus .menu__toggle-icon-cross, .menu__toggle:hover .menu__toggle-icon-menu, .menu__toggle:focus .menu__toggle-icon-menu {
   fill: var(--accent);
@@ -690,7 +709,6 @@ body.mouse .dropdown:hover .dropdown__list {
   position: relative;
   gap: 10px;
   align-items: center;
-  color: var(--white);
   transition-duration: 450ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -743,7 +761,7 @@ body.mouse .dropdown:hover .dropdown__list {
   display: none;
   background: var(--white);
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
-  padding: 25px 20px;
+  padding: 25px 19px;
   position: absolute;
   top: 100%;
   right: -10px;

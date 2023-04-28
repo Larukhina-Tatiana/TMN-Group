@@ -1,6 +1,6 @@
 .search {
     @media  (width < 1200px) {
-        display: none;
+        // display: none;
     }
 
     position: relative;
@@ -16,7 +16,7 @@
         width: 16px;
         height: 16px;
         padding: 0;
-        background-image: url(/images/icons/search.svg);
+        background-image: url(../images/icons/search.svg);
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;

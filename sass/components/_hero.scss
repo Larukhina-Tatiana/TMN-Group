@@ -3,6 +3,49 @@
     margin-right: auto;
     text-align: center;
     padding-top: 35px;
+    color: var(--white);
+
+    background: var(--lineal-hero), url(../images/hero/m-hero@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 5px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-mini-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background: var(--lineal-hero), url(../images/hero/m-hero@2x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (-webkit-min-device-pixel-ratio: 3),
+    screen and (-o-mini-device-pixel-ratio: 3/1),
+    screen and (min-resolution: 228dpi),
+    screen and (min-resolution: 3dppx) {
+        background: var(--lineal-hero), url(../images/hero/m-hero@3x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+
+    &__inner {
+        margin-top: 41px;
+
+    }
+
+    &__content {
+        padding: 0 7px;
+        margin: 0 auto;
+
+
+    }
 
     &__title {
         font-size: 50px;
@@ -72,6 +115,38 @@
             height: 45px;
             padding: 11px 35px;
             font-size: 16px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 228px;
+        padding-bottom: 197px;
+        background: var(--lineal-hero), url(../images/hero/d-hero@1x.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-mini-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background: var(--lineal-hero), url(../images/hero/d-hero@2x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+        screen and (-webkit-min-device-pixel-ratio: 3),
+        screen and (-o-mini-device-pixel-ratio: 3/1),
+        screen and (min-resolution: 228dpi),
+        screen and (min-resolution: 3dppx) {
+            background: var(--lineal-hero), url(../images/hero/d-hero@3x.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }

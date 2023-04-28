@@ -1,4 +1,18 @@
-// .logo {
-//     width: 31px;
-//     height: 25px;
-// }
+.logo {
+  &__img-mobile {
+    width: 31px;
+    height: 25px;
+
+    @media screen and (width > 768px) {
+      display: none;
+    }
+  }
+
+  &__img-desctop {
+    display: none;
+
+    @media screen and (width > 768px) {
+      display: block;
+    }
+  }
+}
